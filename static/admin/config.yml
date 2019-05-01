@@ -60,7 +60,8 @@ collections:
     label: 'Team'
     folder: 'src/pages/team'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    identifier_field: name
+    slug: '{{name}}-{{slug}}'
     fields:
       - {
           label: 'Template Key',
@@ -68,6 +69,6 @@ collections:
           widget: 'hidden',
           default: 'team',
         }
-      - { label: 'Name', name: 'Name', widget: 'string' }
+      - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'Bio', name: 'body', widget: 'markdown' }
       - { label: 'Photo', name: 'photo', widget: image }
