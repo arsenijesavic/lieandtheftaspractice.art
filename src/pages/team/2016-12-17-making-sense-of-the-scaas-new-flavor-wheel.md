@@ -1,6 +1,6 @@
 ---
 templateKey: team-member
-Name: test
+name: test
 photo: /img/@buffybrenner.jpg
 ---
 
