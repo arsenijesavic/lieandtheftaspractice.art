@@ -38,7 +38,6 @@ const Team = () => {
             }
             frontmatter {
               name
-              photo
             }
           }
         }

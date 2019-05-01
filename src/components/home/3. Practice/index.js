@@ -42,7 +42,6 @@ const Practices = () => {
               templateKey
               date(formatString: "MMMM DD, YYYY")
               featuredpost
-              featuredimage
             }
           }
         }
