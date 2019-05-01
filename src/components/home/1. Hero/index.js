@@ -70,7 +70,6 @@ const Hero = () => {
               templateKey
               date(formatString: "MMMM DD, YYYY")
               featuredpost
-              featuredimage
             }
           }
         }
