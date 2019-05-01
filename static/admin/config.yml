@@ -1,0 +1,73 @@
+backend:
+  name: git-gateway
+  branch: master
+
+media_folder: static/img
+public_folder: /img
+
+collections:
+  - name: 'pages'
+    label: 'Pages'
+    files:
+      - file: 'src/pages/about/index.md'
+        label: 'About'
+        name: 'about'
+        fields:
+          - { label: 'About', name: 'body', widget: 'markdown' }
+          - label: 'Phases'
+            name: 'phases'
+            widget: 'list'
+            fields:
+              - { label: name, name: name, widget: string }
+              - { label: detals, name: detals, widget: markdown }
+
+  - name: 'practice'
+    label: 'Practice'
+    folder: 'src/pages/practice'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - {
+          label: 'Template Key',
+          name: 'templateKey',
+          widget: 'hidden',
+          default: 'practice',
+        }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: 'Featured Image', name: 'featuredimage', widget: image }
+      - { label: 'Featured Post', name: 'featuredpost', widget: 'boolean' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - {
+          label: 'Authors',
+          name: 'authors',
+          widget: 'list',
+          fields:
+            [
+              {
+                label: 'Author',
+                name: 'author',
+                widget: 'relation',
+                collection: 'team',
+                searchFields: ['name'],
+                valueField: 'name',
+                displayFields: ['name'],
+              },
+            ],
+        }
+
+  - name: 'team'
+    label: 'Team'
+    folder: 'src/pages/team'
+    create: true
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - {
+          label: 'Template Key',
+          name: 'templateKey',
+          widget: 'hidden',
+          default: 'team',
+        }
+      - { label: 'Name', name: 'Name', widget: 'string' }
+      - { label: 'Bio', name: 'body', widget: 'markdown' }
+      - { label: 'Photo', name: 'photo', widget: image }
