@@ -8,10 +8,10 @@ const IndexPage = () => {
   return (
     <Layout>
       <Hero />
-      {/* <About />
-      <Practice data={data.practices} />
+      <About />
+      <Practice />
       <Team />
-      <Contact /> */}
+      <Contact />
     </Layout>
   )
 }

@@ -1,66 +1,85 @@
 import React from 'react'
-import { graphql, useStaticQuery, Link } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 import { Flex, Box } from '@rebass/grid'
 import Section from '../../../components/Section'
 import getWidth from '../../../utils/getWidth'
+import Link from 'gatsby-plugin-transition-link/AniLink'
 
 const PracticeWrap = styled.div`
-  height: 200px;
   overflow: hidden;
 `
-const Practice = ({ frontmatter }) => (
-  <PracticeWrap>
-    <Img
-      fluid={frontmatter.featuredimage.childImageSharp.fluid}
-      style={{
-        width: '100%',
-        height: '100%',
-        objectFit: 'cover',
-      }}
-    />
-  </PracticeWrap>
+
+const Practice = ({ name, data }) => (
+  <Flex flexWrap="wrap">
+    <Box width={getWidth(2)}>
+      <Box style={{ borderTop: '2px solid black' }} mb={2}>
+        <h4 style={{ margin: '0', padding: '0.5em 0' }}>{name}</h4>
+      </Box>
+    </Box>
+
+    <Box width={getWidth(10)} pl={4}>
+      <Flex flexWrap="wrap">
+        {data.map((v, i) => (
+          <Box key={i} width={getWidth(3)} p={2}>
+            <PracticeWrap>
+              <Img
+                fluid={v.node.frontmatter.featuredimage.childImageSharp.fluid}
+                style={{
+                  width: '100%',
+                  height: '100%',
+                  objectFit: 'cover',
+                }}
+              />
+            </PracticeWrap>
+          </Box>
+        ))}
+      </Flex>
+    </Box>
+  </Flex>
 )
 
 const Practices = () => {
-  const { practices } = useStaticQuery(graphql`
-    query PracticesPage {
-      practices: allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
-        filter: { frontmatter: { templateKey: { eq: "practice" } } }
-      ) {
-        edges {
-          node {
-            excerpt(pruneLength: 400)
-            id
-            fields {
-              slug
-            }
-            frontmatter {
-              title
-              templateKey
-              date(formatString: "MMMM DD, YYYY")
-              featuredpost
+  const { practices } = useStaticQuery(
+    graphql`
+      query PracticesPage {
+        practices: allMarkdownRemark(
+          sort: { order: DESC, fields: [frontmatter___date] }
+          filter: { frontmatter: { templateKey: { eq: "practice" } } }
+        ) {
+          edges {
+            node {
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                title
+                templateKey
+                date(formatString: "MMMM DD, YYYY")
+                featuredpost
+                featuredimage {
+                  childImageSharp {
+                    fluid(maxWidth: 120, quality: 100) {
+                      ...GatsbyImageSharpFluid
+                    }
+                  }
+                }
+              }
             }
           }
         }
       }
-    }
-  `)
+    `,
+  )
 
   return (
     <Section>
       <h2>practices</h2>
-      <Flex flexWrap="wrap">
-        {practices.edges.map((v, i) => (
-          <Box width={getWidth(3)} p={2}>
-            <Link key={i} style={{ width: '100%' }} to={v.node.fields.slug}>
-              <Practice {...v.node} />
-            </Link>
-          </Box>
-        ))}
-      </Flex>
+      <Practice name="Banana" data={[...practices.edges, ...practices.edges]} />
+      <Practice name="Jagoda" data={practices.edges} />
+      <Practice name="Nar" data={practices.edges} />
     </Section>
   )
 }

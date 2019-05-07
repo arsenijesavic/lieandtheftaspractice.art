@@ -4,22 +4,24 @@ import Img from 'gatsby-image'
 import styled from 'styled-components'
 import { Flex, Box } from '@rebass/grid'
 import Section from '../../../components/Section'
+import { Tooltip } from 'react-tippy'
 import getWidth from '../../../utils/getWidth'
 
 const MemberWrap = styled(Box)`
-  height: 200px;
   overflow: hidden;
 `
 const Member = ({ frontmatter }) => (
   <MemberWrap width={getWidth(3)} p={2}>
-    <Img
-      fluid={frontmatter.photo.childImageSharp.fluid}
-      style={{
-        width: '100%',
-        height: '100%',
-        objectFit: 'cover',
-      }}
-    />
+    <Tooltip title="Welcome to React" trigger="mouseenter" followCursor={true}>
+      <Img
+        fluid={frontmatter.photo.childImageSharp.fluid}
+        style={{
+          width: '100%',
+          height: '100%',
+          objectFit: 'cover',
+        }}
+      />
+    </Tooltip>
   </MemberWrap>
 )
 
@@ -38,6 +40,13 @@ const Team = () => {
             }
             frontmatter {
               name
+              photo {
+                childImageSharp {
+                  fluid(maxWidth: 120, quality: 100) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
             }
           }
         }
@@ -49,8 +58,8 @@ const Team = () => {
     <Section style={{ height: '100vh' }}>
       <h2>team</h2>
       <Flex flexWrap="wrap">
-        {team.edges.map(v => (
-          <Member {...v.node} />
+        {team.edges.map((v, i) => (
+          <Member key={i} {...v.node} />
         ))}
       </Flex>
     </Section>

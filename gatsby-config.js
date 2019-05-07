@@ -65,6 +65,22 @@ module.exports = {
       },
     },
     `gatsby-plugin-styled-components`,
+
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        custom: {
+          families: ['Neue Montreal'],
+          urls: ['fonts.css'],
+        },
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-transition-link',
+      options: {
+        layout: require.resolve(`./src/components/Layout`),
+      },
+    },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
 }

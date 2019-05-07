@@ -20,6 +20,7 @@ collections:
             fields:
               - { label: name, name: name, widget: string }
               - { label: detals, name: detals, widget: markdown }
+          - { label: 'Practices', name: 'practices', widget: 'list' }
 
   - name: 'practice'
     label: 'Practice'
@@ -34,10 +35,18 @@ collections:
           default: 'practice',
         }
       - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Featured Image', name: 'featuredimage', widget: image }
-      - { label: 'Featured Post', name: 'featuredpost', widget: 'boolean' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Date', name: 'date', widget: 'datetime' }
+      - {
+          label: 'Type',
+          name: 'type',
+          widget: 'relation',
+          collection: 'about',
+          searchFields: ['practices'],
+          valueField: 'practices',
+          displayFields: ['practices'],
+        }
       - {
           label: 'Authors',
           name: 'authors',
@@ -70,5 +79,5 @@ collections:
           default: 'team',
         }
       - { label: 'Name', name: 'name', widget: 'string' }
-      - { label: 'Bio', name: 'body', widget: 'markdown' }
+      - { label: 'Bio', name: 'body', widget: 'text' }
       - { label: 'Photo', name: 'photo', widget: image }

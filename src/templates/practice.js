@@ -3,33 +3,62 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
+import Img from 'gatsby-image'
 
-const BlogPost = ({ data }) => {
+const Practice = ({ data }) => {
+  const {
+    html,
+    frontmatter: { title, authors, featuredimage },
+  } = data.markdownRemark
+
   return (
     <Layout>
-      <h1>Hello</h1>
+      <Img
+        id="js-big-box"
+        fluid={featuredimage.childImageSharp.fluid}
+        style={{
+          width: '100%',
+          objectFit: 'cover',
+        }}
+      />
+      <h1>{title}</h1>
+      {authors.map((v, i) => (
+        <div key={i}>
+          <h4>{v.author}</h4>
+        </div>
+      ))}
+      <div dangerouslySetInnerHTML={{ __html: html }} />
     </Layout>
   )
 }
 
-BlogPost.propTypes = {
+Practice.propTypes = {
   data: PropTypes.shape({
     markdownRemark: PropTypes.object,
   }),
 }
 
-export default BlogPost
+export default Practice
 
 export const pageQuery = graphql`
-  query BlogPostByID($id: String!) {
+  query PracticeByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
       html
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
         title
-        description
-        tags
+        authors {
+          author
+        }
+        date(formatString: "MMMM DD, YYYY")
+        featuredpost
+        featuredimage {
+          childImageSharp {
+            fluid(maxWidth: 120, quality: 100) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
       }
     }
   }

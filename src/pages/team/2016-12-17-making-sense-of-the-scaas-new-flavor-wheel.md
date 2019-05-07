@@ -1,7 +1,7 @@
 ---
 templateKey: team-member
 name: test
-photo: /img/@buffybrenner.jpg
+photo: /img/lana.jpg
 ---
 
 ![flavor wheel](/img/flavor_wheel.jpg)
