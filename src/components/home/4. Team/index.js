@@ -45,7 +45,7 @@ const Team = () => {
               name
               photo {
                 childImageSharp {
-                  fluid(maxWidth: 10000, quality: 100) {
+                  fluid(maxWidth: 1000, quality: 100) {
                     ...GatsbyImageSharpFluid
                   }
                 }
