@@ -26,7 +26,7 @@ collections:
     label: 'Practice'
     folder: 'src/pages/practice'
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    slug: '{{year}}-{{month}}-{{day}}-{{title}}'
     fields:
       - {
           label: 'Template Key',
@@ -42,10 +42,10 @@ collections:
           label: 'Type',
           name: 'type',
           widget: 'relation',
-          collection: 'about',
-          searchFields: ['practices'],
-          valueField: 'practices',
-          displayFields: ['practices'],
+          collection: 'pages',
+          searchFields: ['pages.practices'],
+          valueField: 'pages.practices',
+          displayFields: ['pages.practices'],
         }
       - {
           label: 'Authors',

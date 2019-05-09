@@ -77,9 +77,7 @@ const Practices = () => {
   return (
     <Section>
       <h2>practices</h2>
-      <Practice name="Banana" data={[...practices.edges, ...practices.edges]} />
-      <Practice name="Jagoda" data={practices.edges} />
-      <Practice name="Nar" data={practices.edges} />
+      <Practice name="Banana" data={practices.edges} />
     </Section>
   )
 }

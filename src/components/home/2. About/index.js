@@ -38,7 +38,7 @@ const About = () => {
       <h2>about</h2>
       <Flex>
         <Box width={getWidth(8)} pr={4}>
-          <p>{about}</p>
+          <div dangerouslySetInnerHTML={{ __html: about }} />
         </Box>
         <Box width={getWidth(4)}>
           <Flex flexDirection="column" style={{ height: '100%' }}>

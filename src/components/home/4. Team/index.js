@@ -12,13 +12,14 @@ const MemberWrap = styled(Box)`
 `
 const Member = ({ frontmatter }) => (
   <MemberWrap width={getWidth(3)} p={2}>
-    <Tooltip title="Welcome to React" trigger="mouseenter" followCursor={true}>
+    <Tooltip title={frontmatter.name} trigger="mouseenter" followCursor={true}>
       <Img
         fluid={frontmatter.photo.childImageSharp.fluid}
         style={{
-          width: '100%',
-          height: '100%',
+          width: '200px',
+          height: '200px',
           objectFit: 'cover',
+          filter: 'saturate(0%)',
         }}
       />
     </Tooltip>
@@ -30,7 +31,7 @@ const Team = () => {
     query TeamPage {
       team: allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___name] }
-        filter: { frontmatter: { templateKey: { eq: "team-member" } } }
+        filter: { frontmatter: { templateKey: { eq: "team" } } }
       ) {
         edges {
           node {
@@ -54,6 +55,7 @@ const Team = () => {
     }
   `)
 
+  console.log(team)
   return (
     <Section style={{ height: '100vh' }}>
       <h2>team</h2>
