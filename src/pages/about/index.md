@@ -11,7 +11,6 @@ practices:
   - Jagoda
   - Nar
 ---
-
 **Lie & Theft as Practice (2019)**\
 within the platform Next Generation (Goethe-Institut Serbien)
 
