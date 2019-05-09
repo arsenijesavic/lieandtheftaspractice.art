@@ -1,5 +1,5 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 import { Flex, Box } from '@rebass/grid'
@@ -10,18 +10,20 @@ import getWidth from '../../../utils/getWidth'
 const MemberWrap = styled(Box)`
   overflow: hidden;
 `
-const Member = ({ frontmatter }) => (
+const Member = ({ fields, frontmatter }) => (
   <MemberWrap width={getWidth(3)} p={2}>
     <Tooltip title={frontmatter.name} trigger="mouseenter" followCursor={true}>
-      <Img
-        fluid={frontmatter.photo.childImageSharp.fluid}
-        style={{
-          width: '200px',
-          height: '200px',
-          objectFit: 'cover',
-          filter: 'saturate(0%)',
-        }}
-      />
+      <Link to={fields.slug}>
+        <Img
+          fluid={frontmatter.photo.childImageSharp.fluid}
+          style={{
+            width: '200px',
+            height: '200px',
+            objectFit: 'cover',
+            filter: 'saturate(0%)',
+          }}
+        />
+      </Link>
     </Tooltip>
   </MemberWrap>
 )
@@ -43,7 +45,7 @@ const Team = () => {
               name
               photo {
                 childImageSharp {
-                  fluid(maxWidth: 120, quality: 100) {
+                  fluid(maxWidth: 10000, quality: 100) {
                     ...GatsbyImageSharpFluid
                   }
                 }

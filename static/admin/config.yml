@@ -70,7 +70,7 @@ collections:
     folder: 'src/pages/team'
     create: true
     identifier_field: name
-    slug: '{{name}}-{{slug}}'
+    slug: '{{name}}'
     fields:
       - {
           label: 'Template Key',
@@ -81,3 +81,4 @@ collections:
       - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'Bio', name: 'body', widget: 'text' }
       - { label: 'Photo', name: 'photo', widget: image }
+      - { label: 'Order', name: 'order', widget: number }

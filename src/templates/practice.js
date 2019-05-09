@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { graphql } from 'gatsby'
 
 import Layout from '../components/Layout'
+import Section from '../components/Section'
 import Img from 'gatsby-image'
 
 const Practice = ({ data }) => {
@@ -13,21 +14,23 @@ const Practice = ({ data }) => {
 
   return (
     <Layout>
-      <Img
-        id="js-big-box"
-        fluid={featuredimage.childImageSharp.fluid}
-        style={{
-          width: '100%',
-          objectFit: 'cover',
-        }}
-      />
-      <h1>{title}</h1>
-      {authors.map((v, i) => (
-        <div key={i}>
-          <h4>{v.author}</h4>
-        </div>
-      ))}
-      <div dangerouslySetInnerHTML={{ __html: html }} />
+      <Section>
+        <Img
+          id="js-big-box"
+          fluid={featuredimage.childImageSharp.fluid}
+          style={{
+            width: '100%',
+            objectFit: 'cover',
+          }}
+        />
+        <h1>{title}</h1>
+        {authors.map((v, i) => (
+          <div key={i}>
+            <h4>{v.author}</h4>
+          </div>
+        ))}
+        <div dangerouslySetInnerHTML={{ __html: html }} />
+      </Section>
     </Layout>
   )
 }

@@ -1,11 +1,10 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery, Link } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
 import { Flex, Box } from '@rebass/grid'
 import Section from '../../../components/Section'
 import getWidth from '../../../utils/getWidth'
-import Link from 'gatsby-plugin-transition-link/AniLink'
 
 const PracticeWrap = styled.div`
   overflow: hidden;
@@ -23,16 +22,18 @@ const Practice = ({ name, data }) => (
       <Flex flexWrap="wrap">
         {data.map((v, i) => (
           <Box key={i} width={getWidth(3)} p={2}>
-            <PracticeWrap>
-              <Img
-                fluid={v.node.frontmatter.featuredimage.childImageSharp.fluid}
-                style={{
-                  width: '100%',
-                  height: '100%',
-                  objectFit: 'cover',
-                }}
-              />
-            </PracticeWrap>
+            <Link to={v.node.fields.slug}>
+              <PracticeWrap>
+                <Img
+                  fluid={v.node.frontmatter.featuredimage.childImageSharp.fluid}
+                  style={{
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                  }}
+                />
+              </PracticeWrap>
+            </Link>
           </Box>
         ))}
       </Flex>
@@ -61,7 +62,7 @@ const Practices = () => {
                 featuredpost
                 featuredimage {
                   childImageSharp {
-                    fluid(maxWidth: 120, quality: 100) {
+                    fluid(maxWidth: 10000, quality: 100) {
                       ...GatsbyImageSharpFluid
                     }
                   }
