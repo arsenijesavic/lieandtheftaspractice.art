@@ -34,16 +34,19 @@ const About = () => {
   const phases = data.edges[0].node.frontmatter.phases
 
   return (
-    <Section style={{ height: '100vh' }}>
-      <h2>about</h2>
-      <Flex>
-        <Box width={getWidth(8)} pr={4}>
-          <div dangerouslySetInnerHTML={{ __html: about }} />
+    <Section style={{ minHeight: '100vh' }}>
+      <h2 style={{ fontWeight: '100', marginTop: '129px' }}>ABOUT</h2>
+      <Flex flexWrap="wrap">
+        <Box width={getWidth(12)} py={2}>
+          <div
+            style={{ columns: '300px 2' }}
+            dangerouslySetInnerHTML={{ __html: about }}
+          />
         </Box>
-        <Box width={getWidth(4)}>
+        <Box width={getWidth(12)} py={2}>
           <Flex flexDirection="column" style={{ height: '100%' }}>
             {phases.map((v, i) => (
-              <Box key={i} style={{ borderTop: '2px solid black' }} mb={2}>
+              <Box key={i} mb={2}>
                 <h4 style={{ margin: '0', padding: '0.5em 0' }}>{v.name}</h4>
               </Box>
             ))}

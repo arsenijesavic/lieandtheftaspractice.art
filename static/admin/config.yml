@@ -81,4 +81,10 @@ collections:
       - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'Bio', name: 'body', widget: 'text' }
       - { label: 'Photo', name: 'photo', widget: image }
+      - {
+          label: 'Type',
+          name: 'type',
+          widget: 'select',
+          options: ['member', 'guest'],
+        }
       - { label: 'Order', name: 'order', widget: number }

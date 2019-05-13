@@ -10,18 +10,23 @@ const PracticeWrap = styled.div`
   overflow: hidden;
 `
 
+const Wrap = styled.div`
+  width: 960px;
+  margin: 0 auto;
+`
+
 const Practice = ({ name, data }) => (
-  <Flex flexWrap="wrap">
+  <Flex style={{ borderBottom: '1px solid black' }} flexWrap="wrap">
     <Box width={getWidth(2)}>
-      <Box style={{ borderTop: '2px solid black' }} mb={2}>
-        <h4 style={{ margin: '0', padding: '0.5em 0' }}>{name}</h4>
+      <Box mb={2}>
+        <h4 style={{ fontWeight: '100' }}>{name.toUpperCase()}</h4>
       </Box>
     </Box>
 
     <Box width={getWidth(10)} pl={4}>
-      <Flex flexWrap="wrap">
+      <Flex>
         {data.map((v, i) => (
-          <Box key={i} width={getWidth(3)} p={2}>
+          <Box key={i} width={getWidth(1)} p={2}>
             <Link to={v.node.fields.slug}>
               <PracticeWrap>
                 <Img
@@ -74,11 +79,17 @@ const Practices = () => {
       }
     `,
   )
-
   return (
-    <Section>
-      <h2>practices</h2>
-      <Practice name="Banana" data={practices.edges} />
+    <Section full style={{ background: '#F2F2F2' }}>
+      <Wrap>
+        <h2 style={{ fontWeight: '100' }}>PRACTICES</h2>
+        <Practice name="Banana" data={practices.edges} />
+        <Practice name="Banana" data={practices.edges} />
+        <Practice name="Banana" data={practices.edges} />
+        <Practice name="Banana" data={practices.edges} />
+        <Practice name="Banana" data={practices.edges} />
+        <Practice name="Banana" data={practices.edges} />
+      </Wrap>
     </Section>
   )
 }

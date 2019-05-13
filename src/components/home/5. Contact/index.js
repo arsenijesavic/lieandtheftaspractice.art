@@ -6,8 +6,9 @@ import Section from '../../../components/Section'
 //import getWidth from '../../../utils/getWidth'
 
 const Contact = ({ data }) => (
-  <Section style={{ height: '100vh' }}>
+  <Section>
     <h2>contact</h2>
+    <p>@</p>
   </Section>
 )
 

@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { graphql } from 'gatsby'
+import { graphql, Link } from 'gatsby'
 
 import Layout from '../components/Layout'
 import Section from '../components/Section'
@@ -20,14 +20,16 @@ const Practice = ({ data }) => {
           fluid={featuredimage.childImageSharp.fluid}
           style={{
             width: '100%',
+
             objectFit: 'cover',
+            height: '50vh',
           }}
         />
-        <h1>{title}</h1>
+        <h2 style={{ fontWeight: '100' }}>{title.toUpperCase()}</h2>
         {authors.map((v, i) => (
-          <div key={i}>
-            <h4>{v.author}</h4>
-          </div>
+          <Link key={i} to={'slug'}>
+            <h4 style={{ padding: '0', margin: '0' }}>{v.author}</h4>
+          </Link>
         ))}
         <div dangerouslySetInnerHTML={{ __html: html }} />
       </Section>
@@ -57,7 +59,7 @@ export const pageQuery = graphql`
         featuredpost
         featuredimage {
           childImageSharp {
-            fluid(maxWidth: 120, quality: 100) {
+            fluid(maxWidth: 1000, quality: 100) {
               ...GatsbyImageSharpFluid
             }
           }

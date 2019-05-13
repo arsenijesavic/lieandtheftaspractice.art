@@ -9,29 +9,52 @@ import getWidth from '../../../utils/getWidth'
 
 const MemberWrap = styled(Box)`
   overflow: hidden;
+  border-bottom: 1px solid #fff;
 `
-const Member = ({ fields, frontmatter }) => (
-  <MemberWrap width={getWidth(3)} p={2}>
-    <Tooltip title={frontmatter.name} trigger="mouseenter" followCursor={true}>
-      <Link to={fields.slug}>
-        <Img
-          fluid={frontmatter.photo.childImageSharp.fluid}
+
+const Wrap = styled.div`
+  width: 960px;
+  margin: 0 auto;
+  padding-bottom: 96px;
+`
+
+const Member = ({ slug, name, photo }) => (
+  <MemberWrap width={getWidth(6)} py={3}>
+    <Tooltip
+      html={
+        <div
           style={{
             width: '200px',
             height: '200px',
-            objectFit: 'cover',
-            filter: 'saturate(0%)',
+            background: 'red',
           }}
-        />
+        >
+          <Img
+            fluid={photo.childImageSharp.fluid}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              filter: 'saturate(0%)',
+            }}
+          />
+        </div>
+      }
+      trigger="mouseenter"
+      // position="right"
+      // followCursor={true}
+    >
+      <Link style={{ color: '#fff' }} to={slug}>
+        <h4 style={{ padding: '0', margin: '0' }}>{name}</h4>
       </Link>
     </Tooltip>
   </MemberWrap>
 )
 
 const Team = () => {
-  const { team } = useStaticQuery(graphql`
+  const { data } = useStaticQuery(graphql`
     query TeamPage {
-      team: allMarkdownRemark(
+      data: allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___name] }
         filter: { frontmatter: { templateKey: { eq: "team" } } }
       ) {
@@ -43,6 +66,7 @@ const Team = () => {
             }
             frontmatter {
               name
+              order
               photo {
                 childImageSharp {
                   fluid(maxWidth: 400, quality: 70) {
@@ -57,15 +81,23 @@ const Team = () => {
     }
   `)
 
-  console.log(team)
+  const team = data.edges
+    .map(v => ({
+      ...v.node.fields,
+      ...v.node.frontmatter,
+    }))
+    .sort((a, b) => a.order - b.order)
+
   return (
-    <Section style={{ height: '100vh' }}>
-      <h2>team</h2>
-      <Flex flexWrap="wrap">
-        {team.edges.map((v, i) => (
-          <Member key={i} {...v.node} />
-        ))}
-      </Flex>
+    <Section full style={{ background: '#000' }}>
+      <Wrap>
+        <h2 style={{ fontWeight: '100', color: '#fff' }}>TEAM</h2>
+        <Flex style={{ marginTop: '64px' }} flexWrap="wrap">
+          {team.map((v, i) => (
+            <Member key={i} {...v} />
+          ))}
+        </Flex>
+      </Wrap>
     </Section>
   )
 }
