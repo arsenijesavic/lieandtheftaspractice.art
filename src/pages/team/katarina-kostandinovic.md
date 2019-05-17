@@ -1,7 +1,7 @@
 ---
 templateKey: team
 name: Katarina Kostandinović
-photo: /img/1_katarinakostandinovic.jpg
+photo: /img/f_katarina_kostandinovic.jpg
 type: member
 order: 7
 ---
