@@ -1,7 +1,7 @@
 ---
 templateKey: team
 name: Luka Cvetković
-photo: /img/luka-cvetković.jpg
+photo: /img/luka_cvetkovic.jpg
 type: member
 order: 4
 ---
