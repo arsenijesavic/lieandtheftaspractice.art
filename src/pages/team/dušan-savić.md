@@ -1,7 +1,7 @@
 ---
 templateKey: team
 name: Dušan Savić
-photo: /img/dušan-savić.jpeg
+photo: /img/dušan-savić.jpg
 type: member
 order: 7
 ---
