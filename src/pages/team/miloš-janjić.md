@@ -2,7 +2,8 @@
 templateKey: team
 name: Miloš Janjić
 photo: /img/miloš-janjić.jpg
-order: 7
+type: member
+order: 5
 ---
 (Belgrade, RS, 1994)
 Lives in Belgrade and currently fnishing studies of leather fashion designe at Belgrade Polytechnic College of AppliStudies, but he is also interested in costume designe, eco fashion designe, visual art.
