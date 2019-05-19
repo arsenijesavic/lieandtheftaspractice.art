@@ -1,6 +1,6 @@
 ---
 templateKey: team
-name: 'Zorica Milisavljević '
+name: Zorica Milisavljević
 photo: /img/zorica_milisavljevic_notmyself-8-.jpg
 type: member
 order: 2
