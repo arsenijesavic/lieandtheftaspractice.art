@@ -80,7 +80,7 @@ const Practices = () => {
     `,
   )
   return (
-    <Section full style={{ background: '#F2F2F2' }}>
+    <Section id="practice" full style={{ background: '#F2F2F2' }}>
       <Wrap>
         <h2 style={{ fontWeight: '100' }}>PRACTICES</h2>
         <Practice name="Banana" data={practices.edges} />

@@ -30,7 +30,8 @@ const Member = ({ slug, name, photo }) => (
           }}
         >
           <Img
-            fluid={photo.childImageSharp.fluid}
+            eager={true}
+            fluid={photo && photo.childImageSharp.fluid}
             style={{
               width: '100%',
               height: '100%',
@@ -69,7 +70,7 @@ const Team = () => {
               order
               photo {
                 childImageSharp {
-                  fluid(maxWidth: 400, quality: 70) {
+                  fluid(maxWidth: 200, quality: 60) {
                     ...GatsbyImageSharpFluid
                   }
                 }
@@ -89,7 +90,7 @@ const Team = () => {
     .sort((a, b) => a.order - b.order)
 
   return (
-    <Section full style={{ background: '#000' }}>
+    <Section id="team" full style={{ background: '#000' }}>
       <Wrap>
         <h2 style={{ fontWeight: '100', color: '#fff' }}>TEAM</h2>
         <Flex style={{ marginTop: '64px' }} flexWrap="wrap">

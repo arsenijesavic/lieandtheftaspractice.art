@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 //import styled from 'styled-components'
 import { Flex, Box } from '@rebass/grid'
 import Section from '../../../components/Section'
 //import Collapsible from 'react-collapsible'
 import getWidth from '../../../utils/getWidth'
+import posed from 'react-pose'
+
+const Accordion = posed.div({
+  closed: { height: 0 },
+  open: { height: 'auto' },
+})
 
 const About = () => {
   const { data } = useStaticQuery(graphql`
@@ -21,7 +27,7 @@ const About = () => {
             frontmatter {
               phases {
                 name
-                detals
+                details
               }
             }
           }
@@ -33,8 +39,10 @@ const About = () => {
   const about = data.edges[0].node.html
   const phases = data.edges[0].node.frontmatter.phases
 
+  const [open, setOpen] = useState(-1)
+
   return (
-    <Section style={{ minHeight: '100vh' }}>
+    <Section id="about" style={{ minHeight: '100vh' }}>
       <h2 style={{ fontWeight: '100', marginTop: '129px' }}>ABOUT</h2>
       <Flex flexWrap="wrap">
         <Box width={getWidth(12)} py={2}>
@@ -46,8 +54,19 @@ const About = () => {
         <Box width={getWidth(12)} py={2}>
           <Flex flexDirection="column" style={{ height: '100%' }}>
             {phases.map((v, i) => (
-              <Box key={i} mb={2}>
+              <Box
+                key={i}
+                mb={2}
+                onClick={() => setOpen(open === i ? false : i)}
+                style={{ cursor: 'pointer' }}
+              >
                 <h4 style={{ margin: '0', padding: '0.5em 0' }}>{v.name}</h4>
+                <Accordion
+                  style={{ overflow: 'hidden', columns: '300px 2' }}
+                  pose={open === i ? 'open' : 'closed'}
+                >
+                  <p>{v.details}</p>
+                </Accordion>
               </Box>
             ))}
           </Flex>

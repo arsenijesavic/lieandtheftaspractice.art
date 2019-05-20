@@ -2,9 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, useStaticQuery } from 'gatsby'
 import { Helmet } from 'react-helmet'
+import Header from './header'
 import { createGlobalStyle } from 'styled-components'
 
-//import Header from './header'
+if (typeof window !== 'undefined') {
+  // eslint-disable-next-line global-require
+  require('smooth-scroll')('a[href*="#"]')
+}
 
 const GlobalStyle = createGlobalStyle`
 
@@ -73,7 +77,7 @@ const Layout = ({ children }) => {
       </Helmet>
       <GlobalStyle />
       <div>
-        {/* <Header /> */}
+        <Header />
         <main>{children}</main>
       </div>
     </>

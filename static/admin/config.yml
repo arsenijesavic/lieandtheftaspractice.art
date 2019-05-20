@@ -41,11 +41,8 @@ collections:
       - {
           label: 'Type',
           name: 'type',
-          widget: 'relation',
-          collection: 'pages',
-          searchFields: ['pages.practices'],
-          valueField: 'pages.practices',
-          displayFields: ['pages.practices'],
+          widget: 'select',
+          options: ['banana', 'jagoda'],
         }
       - {
           label: 'Authors',
@@ -79,7 +76,7 @@ collections:
           default: 'team',
         }
       - { label: 'Name', name: 'name', widget: 'string' }
-      - { label: 'Bio', name: 'body', widget: 'text' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
       - { label: 'Photo', name: 'photo', widget: image }
       - {
           label: 'Type',

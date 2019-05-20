@@ -6,7 +6,7 @@ import Section from '../../../components/Section'
 //import getWidth from '../../../utils/getWidth'
 
 const Contact = ({ data }) => (
-  <Section>
+  <Section id="contact">
     <h2>contact</h2>
     <p>@</p>
   </Section>

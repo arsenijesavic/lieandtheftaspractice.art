@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
 
 const Wrap = styled.header`
   position: fixed;
@@ -34,10 +35,18 @@ const Header = () => (
     <Iner>
       <Nav>
         <ul>
-          <li>about</li>
-          <li>practice</li>
-          <li>team</li>
-          <li>contact</li>
+          <li>
+            <Link to="/#about">about</Link>
+          </li>
+          <li>
+            <Link to="/#practice">practice</Link>
+          </li>
+          <li>
+            <Link to="/#team">team</Link>
+          </li>
+          <li>
+            <Link to="/#contact">contact</Link>
+          </li>
         </ul>
       </Nav>
     </Iner>

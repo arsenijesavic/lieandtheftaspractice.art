@@ -7,13 +7,16 @@ import getWidth from '../utils/getWidth'
 import Layout from '../components/Layout'
 import Section from '../components/Section'
 
-const TeamMember = ({ data }) => {
+const sectionStyle = {
+  cursor: 'w-resize',
+  paddingTop: '200px',
+}
+const TeamMember = ({ data, ...props }) => {
   const { frontmatter, html } = data.markdownRemark
-
   return (
     <Layout>
-      <Section>
-        <Flex style={{ marginTop: '200px' }}>
+      <Section style={sectionStyle} onClick={() => props.navigate('/#team')}>
+        <Flex>
           <Box width={getWidth(4)} p={2}>
             <Img
               fluid={frontmatter.photo.childImageSharp.fluid}
