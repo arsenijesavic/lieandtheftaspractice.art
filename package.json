@@ -6,7 +6,7 @@
   "dependencies": {
     "@rebass/grid": "^6.0.0",
     "babel-plugin-styled-components": "^1.10.0",
-    "gatsby": "^2.5.5",
+    "gatsby": "^2.7.0",
     "gatsby-image": "^2.1.0",
     "gatsby-plugin-netlify": "^2.0.17",
     "gatsby-plugin-netlify-cms": "^4.0.1",
@@ -18,7 +18,7 @@
     "gatsby-remark-copy-linked-files": "^2.0.12",
     "gatsby-remark-images": "^3.0.11",
     "gatsby-remark-relative-images": "^0.2.2",
-    "gatsby-source-filesystem": "^2.0.36",
+    "gatsby-source-filesystem": "^2.0.37",
     "gatsby-transformer-remark": "^2.3.12",
     "gatsby-transformer-sharp": "^2.1.19",
     "gsap": "^2.1.3",

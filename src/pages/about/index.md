@@ -1,13 +1,13 @@
 ---
 phases:
-  - detals: >-
+  - details: >-
       **Next Generation: Lie & Theft as Practice**
 
 
       **Goethe-Institut**
 
 
-      **50, Knez Mihailova Street** 
+      **50, Knez Mihailova Street**
 
 
       **Belgrade**
@@ -25,12 +25,12 @@ phases:
       the exchange of information through which we wish to shake the foundations
       of the widely known connotation that follows the terms lie and theft, as
       well as their powers of transformation into newly-devised formats of
-      artistic creation. 
+      artistic creation.
 
 
       Our aim is to create a group the members of which are ready to continually
       take part in a two-year-long cooperation in the construction of materials
-      that will serve as archival objects.   
+      that will serve as archival objects.
 
 
       Processes of cross-examining the individual body and the knowledge it
@@ -40,24 +40,24 @@ phases:
       credibility of omnipresent system values through the implementation of a
       number of practices as potential parameters. From this stand on “cultural
       capital” we will bring into question the power of archiving itself, as
-      well as the issue of copyrights.  
+      well as the issue of copyrights.
 
 
       In addition to performing arts, the project participants will be given an
-      opportunity to develop textual, digital, musical scores, etc. 
+      opportunity to develop textual, digital, musical scores, etc.
 
 
       In the course of the last day of the March phase, the newly-selected
       participants of the _Lie & Theft as Practice_ project will have a chance,
       for the first time, to jointly open and begin a dialogue on an assigned
-      two-year topic within the formed group. 
+      two-year topic within the formed group.
 
 
       What follows is a number of workshops in September, November and December
       of 2019, as well as an exchange of online tasks during the month of May of
       this current year.
     name: 'Phase I: February 25 – March 11, 2019'
-  - detals: >-
+  - details: >-
       **Next Generation: Lie & Theft as Practice**
 
 
@@ -71,7 +71,7 @@ phases:
       work on the _Lie & Theft as Practice_ project we will launch a number of
       performance processes through which we wish to contextualize practices
       that will be an integral part of the contents we will be working on in the
-      course of 2019 and 2020. 
+      course of 2019 and 2020.
 
 
       The second phase is aimed at introductions, presenting each of the
@@ -84,7 +84,7 @@ phases:
       Personal and collective approaches, as newly-found soulutions, will be
       available via an online platform which will serve as a kind of laboratory
       through which the processes that have been newly devised by the group will
-      be presented to the public as well.  
+      be presented to the public as well.
 
 
       In the course of the second phase in the month of May, ten associates on
@@ -106,12 +106,15 @@ phases:
       Phase II, with a duration of two weeks, at the same time represents a
       platform in the course of which two tasks will be carried out.
     name: 'Phase II: May 12-26, 2019'
+
 practices:
   - Banana
   - Jagoda
   - Nar
 ---
-**Lie & Theft as Practice (2019)**\
+
+**Lie & Theft as Practice (2019)**
+
 within the platform Next Generation (Goethe-Institut Serbien)
 
 Our society is continuously challenged with multiple turmoil. Planet is revolting, people are migrating, more and more animal species are closer to their extinction. Yet, we feel that the ways in which we are consuming the life of everyday, even producing any kind of labor, is highly informed and based on one owns truth. But what really lies beneath the post-capitalist machinery is the world entirely constructed on restrictions and manipulations of what could be called our collective knowledge. Role of individual is permanently lost in the pool of replicas and re-inventions within the context of neoliberal system. Belonging is the crucial point, we chose and merge with the others and this way we construct zones of comfort known as micro communities. In global terms all these communities, that all of us belong to!, imagine to rely on questions of truth, trust and beliefs. But what really constructs these beliefs is something beyond, sometimes ungraspable. Human is becoming more and more aware of the constructs of our own identities questioning their background, their values. We often understand that there is no way out from the system that’s been created and that is existing. We are faced with the facts that our reality is mostly based on Lies and Theft. These two terms have direct associations with something that is negative but we believe that what we trust is truth is also finding its roots in something that has been borrowed or said differently. That’s why, we want to examine the transformative powers of these two terms into the new modes of individual and collective thinking as we believe there is a lot to be recognized, questioned and placed in practice..
