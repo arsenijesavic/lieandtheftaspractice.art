@@ -56,7 +56,7 @@ export const pageQuery = graphql`
           author
         }
         date(formatString: "MMMM DD, YYYY")
-        featuredpost
+
         featuredimage {
           childImageSharp {
             fluid(maxWidth: 1000, quality: 100) {

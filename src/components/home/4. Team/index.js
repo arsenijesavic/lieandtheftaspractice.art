@@ -4,6 +4,7 @@ import Img from 'gatsby-image'
 import styled from 'styled-components'
 import { Flex, Box } from '@rebass/grid'
 import Section from '../../../components/Section'
+import Title from '../../../components/Title'
 import { Tooltip } from 'react-tippy'
 import getWidth from '../../../utils/getWidth'
 
@@ -92,7 +93,7 @@ const Team = () => {
   return (
     <Section id="team" full style={{ background: '#000' }}>
       <Wrap>
-        <h2 style={{ fontWeight: '100', color: '#fff' }}>TEAM</h2>
+        <Title color="#fff" name="TEAM" />
         <Flex style={{ marginTop: '64px' }} flexWrap="wrap">
           {team.map((v, i) => (
             <Member key={i} {...v} />

@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from 'gatsby'
 //import styled from 'styled-components'
 import { Flex, Box } from '@rebass/grid'
 import Section from '../../../components/Section'
+import Title from '../../../components/Title'
 //import Collapsible from 'react-collapsible'
 import getWidth from '../../../utils/getWidth'
 import posed from 'react-pose'
@@ -43,7 +44,7 @@ const About = () => {
 
   return (
     <Section id="about" style={{ minHeight: '100vh' }}>
-      <h2 style={{ fontWeight: '100', marginTop: '129px' }}>ABOUT</h2>
+      <Title name="ABOUT" />
       <Flex flexWrap="wrap">
         <Box width={getWidth(12)} py={2}>
           <div
@@ -65,7 +66,11 @@ const About = () => {
                   style={{ overflow: 'hidden', columns: '300px 2' }}
                   pose={open === i ? 'open' : 'closed'}
                 >
-                  <p>{v.details}</p>
+                  {console.log(v.details)}
+                  <div
+                    style={{ columns: '300px 2' }}
+                    dangerouslySetInnerHTML={{ __html: v.details }}
+                  />
                 </Accordion>
               </Box>
             ))}

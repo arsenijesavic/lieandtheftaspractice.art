@@ -22,7 +22,6 @@ const Hero = () => {
               title
               templateKey
               date(formatString: "MMMM DD, YYYY")
-              featuredpost
             }
           }
         }
@@ -37,6 +36,7 @@ const Hero = () => {
       <h1 style={{ margin: '0', padding: '16px' }}>
         LIE and THEFT as PRACTICE
       </h1>
+
       <Image style={{}} alt="fu" src="img/hero.png" />
     </Section>
   )

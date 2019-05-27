@@ -4,6 +4,7 @@ import Img from 'gatsby-image'
 import styled from 'styled-components'
 import { Flex, Box } from '@rebass/grid'
 import Section from '../../../components/Section'
+import Title from '../../../components/Title'
 import getWidth from '../../../utils/getWidth'
 
 const PracticeWrap = styled.div`
@@ -61,10 +62,10 @@ const Practices = () => {
                 slug
               }
               frontmatter {
-                title
                 templateKey
+                title
+                type
                 date(formatString: "MMMM DD, YYYY")
-                featuredpost
                 featuredimage {
                   childImageSharp {
                     fluid(maxWidth: 400, quality: 70) {
@@ -82,11 +83,7 @@ const Practices = () => {
   return (
     <Section id="practice" full style={{ background: '#F2F2F2' }}>
       <Wrap>
-        <h2 style={{ fontWeight: '100' }}>PRACTICES</h2>
-        <Practice name="Banana" data={practices.edges} />
-        <Practice name="Banana" data={practices.edges} />
-        <Practice name="Banana" data={practices.edges} />
-        <Practice name="Banana" data={practices.edges} />
+        <Title name="PRACTICES" />
         <Practice name="Banana" data={practices.edges} />
         <Practice name="Banana" data={practices.edges} />
       </Wrap>
