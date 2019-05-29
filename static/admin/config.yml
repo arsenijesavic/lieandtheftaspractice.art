@@ -20,8 +20,7 @@ collections:
             widget: 'list'
             fields:
               - { label: name, name: name, widget: string }
-              - { label: details, name: details, widget: markdown }
-          - { label: 'Practices', name: 'practices', widget: 'list' }
+              - { label: details, name: details, widget: text }
 
   - name: 'event'
     label: 'Event'
@@ -34,12 +33,12 @@ collections:
           label: 'Template Key',
           name: 'templateKey',
           widget: 'hidden',
-          default: 'team',
+          default: 'event',
         }
-      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Featured Image', name: 'featuredimage', widget: image }
       - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Photo', name: 'photo', widget: image }
-      - { label: 'Date', name: 'date', widget: date }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
 
   - name: 'practice'
     label: 'Practice'
