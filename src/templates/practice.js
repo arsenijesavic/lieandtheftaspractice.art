@@ -9,9 +9,11 @@ import Img from 'gatsby-image'
 const Practice = ({ data }) => {
   const {
     html,
-    frontmatter: { title, authors, featuredimage },
+    fields: { authors },
+    frontmatter: { title, featuredimage },
   } = data.markdownRemark
 
+  console.log(data)
   return (
     <Layout>
       <Section>
@@ -27,8 +29,8 @@ const Practice = ({ data }) => {
         />
         <h2 style={{ fontWeight: '100' }}>{title.toUpperCase()}</h2>
         {authors.map((v, i) => (
-          <Link key={i} to={'slug'}>
-            <h4 style={{ padding: '0', margin: '0' }}>{v.author}</h4>
+          <Link key={i} to={v.url}>
+            <h4 style={{ padding: '0', margin: '0' }}>{v.name}</h4>
           </Link>
         ))}
         <div dangerouslySetInnerHTML={{ __html: html }} />
@@ -50,13 +52,18 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
+      fields {
+        slug
+
+        authors {
+          name
+          url
+        }
+      }
+
       frontmatter {
         title
-        authors {
-          author
-        }
         date(formatString: "MMMM DD, YYYY")
-
         featuredimage {
           childImageSharp {
             fluid(maxWidth: 1000, quality: 100) {

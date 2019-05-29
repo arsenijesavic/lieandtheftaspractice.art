@@ -13,6 +13,7 @@ collections:
         label: 'About'
         name: 'about'
         fields:
+          - { label: 'Hero photo', name: 'heroPhoto', widget: image }
           - { label: 'About', name: 'body', widget: 'markdown' }
           - label: 'Phases'
             name: 'phases'

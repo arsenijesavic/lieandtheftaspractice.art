@@ -28,10 +28,10 @@ const Practice = ({ name, data }) => (
       <Flex>
         {data.map((v, i) => (
           <Box key={i} width={getWidth(1)} p={2}>
-            <Link to={v.node.fields.slug}>
+            <Link to={v.fields.slug}>
               <PracticeWrap>
                 <Img
-                  fluid={v.node.frontmatter.featuredimage.childImageSharp.fluid}
+                  fluid={v.frontmatter.featuredimage.childImageSharp.fluid}
                   style={{
                     width: '100%',
                     height: '100%',
@@ -80,12 +80,23 @@ const Practices = () => {
       }
     `,
   )
+
+  const data = practices.edges.reduce((obj, p) => {
+    const { type } = p.node.frontmatter
+
+    return {
+      ...obj,
+      [type]: [...(obj[type] ? obj[type] : []), ...p.node],
+    }
+  }, {})
+
   return (
     <Section id="practice" full style={{ background: '#F2F2F2' }}>
       <Wrap>
         <Title name="PRACTICES" />
-        <Practice name="Banana" data={practices.edges} />
-        <Practice name="Banana" data={practices.edges} />
+        {Object.keys(data).map((v, i) => (
+          <Practice key={i} name={v} data={data[v]} />
+        ))}
       </Wrap>
     </Section>
   )

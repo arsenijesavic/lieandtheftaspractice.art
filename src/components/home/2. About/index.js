@@ -66,7 +66,6 @@ const About = () => {
                   style={{ overflow: 'hidden', columns: '300px 2' }}
                   pose={open === i ? 'open' : 'closed'}
                 >
-                  {console.log(v.details)}
                   <div
                     style={{ columns: '300px 2' }}
                     dangerouslySetInnerHTML={{ __html: v.details }}

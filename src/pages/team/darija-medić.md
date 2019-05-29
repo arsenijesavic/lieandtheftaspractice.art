@@ -1,6 +1,6 @@
 ---
 templateKey: team
-name: 'Darija Medić '
+name: Darija Medić
 photo: /img/darija-medic.jpg
 type: member
 order: 8

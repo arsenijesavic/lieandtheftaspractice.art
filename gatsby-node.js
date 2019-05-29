@@ -48,7 +48,7 @@ exports.createPages = ({ actions, graphql }) => {
   })
 }
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
+exports.onCreateNode = ({ node, actions, getNode, getNodes }) => {
   const { createNodeField } = actions
   fmImagesToRelative(node) // convert image paths for gatsby images
 
@@ -60,4 +60,48 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       value,
     })
   }
+}
+
+exports.sourceNodes = ({ actions, getNodes, getNode }) => {
+  const { createNodeField } = actions
+  getNodes()
+    .filter(node => node.internal.type === 'MarkdownRemark')
+    .forEach(node => {
+      if (node.frontmatter.templateKey === 'practice') {
+        const authors = node.frontmatter.authors.map(v => v.author)
+        const authorNode = getNodes()
+          .filter(node2 => node2.internal.type === 'MarkdownRemark')
+          .filter(node2 => node2.frontmatter.templateKey === 'team')
+          .filter(node2 => authors.includes(node2.frontmatter.name))
+          .map(node2 => ({ ...node2.frontmatter, url: node2.fields.slug }))
+
+        if (authorNode) {
+          createNodeField({
+            node,
+            name: 'authors',
+            value: [...authorNode],
+          })
+        }
+      }
+
+      if (node.frontmatter.templateKey === 'team') {
+        const practices = getNodes()
+          .filter(node2 => node2.internal.type === 'MarkdownRemark')
+          .filter(node2 => node2.frontmatter.templateKey === 'practice')
+          .filter(node2 =>
+            node2.frontmatter.authors
+              .map(v => v.author)
+              .includes(node.frontmatter.name),
+          )
+          .map(node2 => ({ ...node2.frontmatter, url: node2.fields.slug }))
+
+        if (practices) {
+          createNodeField({
+            node,
+            name: 'practices',
+            value: [...practices],
+          })
+        }
+      }
+    })
 }

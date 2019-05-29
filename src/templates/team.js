@@ -1,7 +1,8 @@
 import React from 'react'
+import { graphql, Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
-import { graphql } from 'gatsby'
+import styled from 'styled-components'
 import { Flex, Box } from '@rebass/grid'
 import getWidth from '../utils/getWidth'
 import Layout from '../components/Layout'
@@ -11,8 +12,18 @@ const sectionStyle = {
   cursor: 'w-resize',
   paddingTop: '200px',
 }
+
+const PracticeWrap = styled.div`
+  overflow: hidden;
+`
+
 const TeamMember = ({ data, ...props }) => {
-  const { frontmatter, html } = data.markdownRemark
+  const {
+    fields: { practices },
+    frontmatter,
+    html,
+  } = data.markdownRemark
+
   return (
     <Layout>
       <Section style={sectionStyle} onClick={() => props.navigate('/#team')}>
@@ -33,6 +44,29 @@ const TeamMember = ({ data, ...props }) => {
             <div dangerouslySetInnerHTML={{ __html: html }} />
           </Box>
         </Flex>
+
+        <Flex flexWrap="wrap">
+          <Box width={getWidth(12)} p={2}>
+            <h4>practices</h4>
+          </Box>
+          {practices &&
+            practices.map((v, i) => (
+              <Box key={i} width={getWidth(3)} p={2}>
+                <Link to={v.url}>
+                  <PracticeWrap>
+                    <Img
+                      fluid={v.featuredimage.childImageSharp.fluid}
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                      }}
+                    />
+                  </PracticeWrap>
+                </Link>
+              </Box>
+            ))}
+        </Flex>
       </Section>
     </Layout>
   )
@@ -51,6 +85,21 @@ export const pageQuery = graphql`
     markdownRemark(id: { eq: $id }) {
       id
       html
+      fields {
+        practices {
+          title
+          url
+          date(formatString: "MMMM DD, YYYY")
+          featuredimage {
+            childImageSharp {
+              fluid(maxWidth: 1000, quality: 100) {
+                ...GatsbyImageSharpFluid
+              }
+            }
+          }
+        }
+      }
+
       frontmatter {
         name
         photo {

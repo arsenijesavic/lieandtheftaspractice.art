@@ -1,6 +1,6 @@
 ---
 templateKey: team
-name: 'Darko Dragičević '
+name: Darko Dragičević
 photo: /img/darko-dragicevic.jpg
 type: member
 order: 1

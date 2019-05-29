@@ -1,6 +1,6 @@
 ---
 templateKey: team
-name: 'Lana Pavkov '
+name: Lana Pavkov
 photo: /img/lana-pavkov.jpg
 type: member
 order: 9

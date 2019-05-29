@@ -1,6 +1,6 @@
 ---
 templateKey: team
-name: 'Tamara Spalajković '
+name: Tamara Spalajković
 photo: /img/tamara-spalajkovic.jpg
 type: member
 order: 11

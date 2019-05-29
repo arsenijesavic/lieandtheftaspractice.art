@@ -83,4 +83,9 @@ module.exports = {
     },
     'gatsby-plugin-netlify', // make sure to keep it last in the array
   ],
+
+  mapping: {
+    'MarkdownRemark.fields._authors': 'MarkdownRemark',
+    'MarkdownRemark.fields._posts': 'MarkdownRemark',
+  },
 }

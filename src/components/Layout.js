@@ -51,6 +51,8 @@ const GlobalStyle = createGlobalStyle`
 `
 
 const Layout = ({ children }) => {
+  // eslint-disable-next-line global-require
+  // eslint-disable-next-line
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -60,8 +62,6 @@ const Layout = ({ children }) => {
       }
     }
   `)
-
-  console.log(data)
 
   return (
     <>

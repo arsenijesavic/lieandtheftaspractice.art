@@ -1,6 +1,6 @@
 ---
 templateKey: team
-name: 'Stevan Beljić '
+name: Stevan Beljić
 photo: /img/stevan-beljic.jpg
 type: member
 order: 3
