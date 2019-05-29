@@ -1,4 +1,5 @@
 ---
+heroPhoto: /img/hero.jpg
 phases:
   - details: >-
       **Next Generation: Lie & Theft as Practice**
@@ -106,7 +107,6 @@ phases:
       Phase II, with a duration of two weeks, at the same time represents a
       platform in the course of which two tasks will be carried out.
     name: 'Phase II: May 12-26, 2019'
-
 practices:
   - Banana
   - Jagoda
