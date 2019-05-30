@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { Link as ScrollLink } from 'react-scroll'
 import { Link as GatsbyLink } from 'gatsby'
+
 const Wrap = styled.header`
   position: sticky;
   top: 0;
@@ -49,22 +50,15 @@ const Header = ({ type }) => {
   return (
     <Wrap>
       <Iner>
-        <div style={{ width: '50%' }}>
-          <a
-            href="https://www.goethe.de/ins/cs/sr/kul/sup/ngt/ltp.html"
-            target="_tab"
-          >
-            <img
-              src="/img/GI_Logo.png"
-              style={{ height: '50px', objectFit: 'cover' }}
-              alt=""
-            />
-          </a>
-        </div>
-
         <Nav>
           <ul>
-            {['home', 'about', 'practice', 'team', 'contact'].map((link, i) => (
+            {[
+              ...(type !== 'scroll' ? ['home'] : []),
+              'about',
+              'practice',
+              'team',
+              'contact',
+            ].map((link, i) => (
               <li key={i}>
                 <Link
                   activeClass="active"
@@ -81,6 +75,18 @@ const Header = ({ type }) => {
             ))}
           </ul>
         </Nav>
+        <div style={{ position: 'relative', right: '-55px' }}>
+          <a
+            href="https://www.goethe.de/ins/cs/sr/kul/sup/ngt/ltp.html"
+            target="_tab"
+          >
+            <img
+              src="/img/GI_Logo.png"
+              style={{ height: '50px', objectFit: 'cover' }}
+              alt=""
+            />
+          </a>
+        </div>
       </Iner>
     </Wrap>
   )

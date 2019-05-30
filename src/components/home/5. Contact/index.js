@@ -6,41 +6,42 @@ import Section from '../../../components/Section'
 import Title from '../../../components/Title'
 //import getWidth from '../../../utils/getWidth'
 
-const Contact = ({ data }) => (
-  <Section id="contact">
-    <Flex flexDirection="column" justifyContent="space-between">
-      <Box>
-        <Title name="CONTACT" />
-      </Box>
-      <Box>
-        <h4>
-          <a
-            style={{ color: '#000' }}
-            href="mailto:lieandtheftaspractice@gmail.com"
-          >
-            lieandtheftaspractice@gmail.com
-          </a>
-        </h4>
-        <h4>
-          <a
-            style={{ color: '#000' }}
-            href="mailto:contact@darkodragicevic.com
-            "
-          >
-            contact@darkodragicevic.com
-          </a>
-        </h4>
-        <h4>
-          <a
-            style={{ color: '#000' }}
-            href="mailto:zorica.milisavljevic@goethe.de"
-          >
-            zorica.milisavljevic@goethe.de
-          </a>
-        </h4>
-      </Box>
-    </Flex>
-  </Section>
-)
+const Contact = () => {
+  return (
+    <Section id="contact">
+      <Flex flexDirection="column" justifyContent="space-between">
+        <Box>
+          <Title name="CONTACT" />
+        </Box>
 
+        <Box>
+          <h4 style={{ fontWeight: '500' }}>
+            <a
+              style={{ color: '#000' }}
+              href="mailto:lieandtheftaspractice@gmail.com"
+            >
+              lieandtheftaspractice@gmail.com
+            </a>
+          </h4>
+          <h4 style={{ fontWeight: '500' }}>
+            <a
+              style={{ color: '#000' }}
+              href="mailto:contact@darkodragicevic.com"
+            >
+              contact@darkodragicevic.com
+            </a>
+          </h4>
+          <h4 style={{ fontWeight: '500' }}>
+            <a
+              style={{ color: '#000' }}
+              href="mailto:zorica.milisavljevic@goethe.de"
+            >
+              zorica.milisavljevic@goethe.de
+            </a>
+          </h4>
+        </Box>
+      </Flex>
+    </Section>
+  )
+}
 export default Contact

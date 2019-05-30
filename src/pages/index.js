@@ -4,16 +4,18 @@ import Layout from '../components/Layout'
 import Header from '../components/header'
 import { Hero, About, Practice, Team, Contact } from '../components/home'
 
-const IndexPage = () => (
-  <Layout>
-    <Hero />
-    <Header type="scroll" />
-    <About />
-    <Practice />
-    <Team />
-    <Contact />
-  </Layout>
-)
+const IndexPage = () => {
+  return (
+    <Layout>
+      <Hero />
+      <Header type="scroll" />
+      <About />
+      <Practice />
+      <Team />
+      <Contact />
+    </Layout>
+  )
+}
 
 // IndexPage.propTypes = {
 //   data: PropTypes.shape({

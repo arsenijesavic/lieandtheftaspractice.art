@@ -42,7 +42,9 @@ const Member = ({ slug, name, photo }) => (
         // followCursor={true}
       >
         <Link style={{ color: '#fff' }} to={slug}>
-          <h4 style={{ padding: '0', margin: '0' }}>{name}</h4>
+          <h4 style={{ padding: '0', margin: '0', fontWeight: '500' }}>
+            {name}
+          </h4>
         </Link>
       </Tooltip>
     )}

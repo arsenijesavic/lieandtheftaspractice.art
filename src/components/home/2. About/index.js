@@ -67,7 +67,12 @@ const About = () => {
       <Flex flexWrap="wrap">
         <Box width={getWidth(12)} py={2}>
           <div
-            style={{ columns: '300px 2' }}
+            style={{
+              columns: '300px 2',
+              columnGap: '5em',
+              breakInside: 'avoid',
+              textAlign: 'justify',
+            }}
             dangerouslySetInnerHTML={{ __html: about }}
           />
         </Box>
@@ -81,9 +86,23 @@ const About = () => {
                   onClick={() => setOpen(open === i ? false : i)}
                   style={{ cursor: 'pointer' }}
                 >
-                  <h4 style={{ margin: '0', padding: '0.5em 0' }}>{v.name}</h4>
+                  <h4
+                    style={{
+                      margin: '0',
+                      padding: '0.5em 0',
+                      fontWeight: '500',
+                    }}
+                  >
+                    {v.name}
+                  </h4>
                   <Accordion
-                    style={{ overflow: 'hidden', columns: '300px 2' }}
+                    style={{
+                      overflow: 'hidden',
+                      columns: '300px 2',
+                      columnGap: '5em',
+                      breakInside: 'avoid',
+                      textAlign: 'justify',
+                    }}
                     pose={open === i ? 'open' : 'closed'}
                   >
                     <div
