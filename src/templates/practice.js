@@ -1,39 +1,76 @@
 import React from 'react'
+import rehypeReact from 'rehype-react'
+
 import PropTypes from 'prop-types'
 import { graphql, Link } from 'gatsby'
 
+import { Flex, Box } from '@rebass/grid'
 import Layout from '../components/Layout'
+import Header from '../components/header'
 import Section from '../components/Section'
 import Img from 'gatsby-image'
 
-const Practice = ({ data }) => {
+const Frame = props => {
+  return (
+    <div style={{ position: 'relative', paddingTop: '56.25%' }}>
+      <iframe
+        title="unique"
+        src={props.src}
+        frameBorder="0"
+        allowFullScreen
+        style={{
+          position: 'absolute',
+          top: '0',
+          left: '0',
+          width: '100%',
+          height: '100%',
+        }}
+      />
+    </div>
+  )
+}
+
+const renderAst = new rehypeReact({
+  createElement: React.createElement,
+  components: { iframe: Frame },
+}).Compiler
+
+const Practice = ({ data, ...props }) => {
   const {
-    html,
+    htmlAst,
     fields: { authors },
     frontmatter: { title, featuredimage },
   } = data.markdownRemark
 
-  console.log(data)
   return (
-    <Layout>
-      <Section>
+    <Layout style={{ cursor: `url('/img/arrow.png'), auto` }}>
+      <Header />
+      <Section onClick={() => props.navigate('/#team')}>
         <Img
-          id="js-big-box"
           fluid={featuredimage.childImageSharp.fluid}
           style={{
             width: '100%',
-
-            objectFit: 'cover',
             height: '50vh',
+            objectFit: 'cover',
           }}
         />
-        <h2 style={{ fontWeight: '100' }}>{title.toUpperCase()}</h2>
-        {authors.map((v, i) => (
-          <Link key={i} to={v.url}>
-            <h4 style={{ padding: '0', margin: '0' }}>{v.name}</h4>
-          </Link>
-        ))}
-        <div dangerouslySetInnerHTML={{ __html: html }} />
+
+        <h2 style={{ padding: '0.5em 0', margin: '0' }}>
+          {title.toUpperCase()}
+        </h2>
+
+        <Flex>
+          {authors &&
+            authors.map((v, i) => (
+              <Link key={i} to={v.url} style={{ color: '#000' }}>
+                <Box px={2}>
+                  <h4>{v.name}, </h4>
+                </Box>
+              </Link>
+            ))}
+        </Flex>
+
+        {htmlAst && renderAst(htmlAst)}
       </Section>
     </Layout>
   )
@@ -51,7 +88,6 @@ export const pageQuery = graphql`
   query PracticeByID($id: String!) {
     markdownRemark(id: { eq: $id }) {
       id
-      html
       fields {
         slug
 
@@ -60,6 +96,8 @@ export const pageQuery = graphql`
           url
         }
       }
+
+      htmlAst
 
       frontmatter {
         title

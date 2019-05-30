@@ -6,12 +6,8 @@ import styled from 'styled-components'
 import { Flex, Box } from '@rebass/grid'
 import getWidth from '../utils/getWidth'
 import Layout from '../components/Layout'
+import Header from '../components/header'
 import Section from '../components/Section'
-
-const sectionStyle = {
-  cursor: 'w-resize',
-  paddingTop: '200px',
-}
 
 const PracticeWrap = styled.div`
   overflow: hidden;
@@ -25,9 +21,10 @@ const TeamMember = ({ data, ...props }) => {
   } = data.markdownRemark
 
   return (
-    <Layout>
-      <Section style={sectionStyle} onClick={() => props.navigate('/#team')}>
-        <Flex>
+    <Layout style={{ cursor: `url('/img/arrow.png'), auto` }}>
+      <Header />
+      <Section onClick={() => props.navigate('/#team')}>
+        <Flex style={{ padding: '32px 0' }}>
           <Box width={getWidth(4)} p={2}>
             <Img
               fluid={frontmatter.photo.childImageSharp.fluid}
@@ -45,12 +42,12 @@ const TeamMember = ({ data, ...props }) => {
           </Box>
         </Flex>
 
-        <Flex flexWrap="wrap">
-          <Box width={getWidth(12)} p={2}>
-            <h4>practices</h4>
-          </Box>
-          {practices &&
-            practices.map((v, i) => (
+        {practices.length > 0 && (
+          <Flex flexWrap="wrap">
+            <Box width={getWidth(12)} p={2}>
+              <h4>practices</h4>
+            </Box>
+            {practices.map((v, i) => (
               <Box key={i} width={getWidth(3)} p={2}>
                 <Link to={v.url}>
                   <PracticeWrap>
@@ -66,7 +63,8 @@ const TeamMember = ({ data, ...props }) => {
                 </Link>
               </Box>
             ))}
-        </Flex>
+          </Flex>
+        )}
       </Section>
     </Layout>
   )

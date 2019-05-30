@@ -11,11 +11,6 @@ const PracticeWrap = styled.div`
   overflow: hidden;
 `
 
-const Wrap = styled.div`
-  width: 960px;
-  margin: 0 auto;
-`
-
 const Practice = ({ name, data }) => (
   <Flex style={{ borderBottom: '1px solid black' }} flexWrap="wrap">
     <Box width={getWidth(2)}>
@@ -91,13 +86,11 @@ const Practices = () => {
   }, {})
 
   return (
-    <Section id="practice" full style={{ background: '#F2F2F2' }}>
-      <Wrap>
-        <Title name="PRACTICES" />
-        {Object.keys(data).map((v, i) => (
-          <Practice key={i} name={v} data={data[v]} />
-        ))}
-      </Wrap>
+    <Section id="practice" bg="#F2F2F2">
+      <Title name="PRACTICES" />
+      {Object.keys(data).map((v, i) => (
+        <Practice key={i} name={v} data={data[v]} />
+      ))}
     </Section>
   )
 }

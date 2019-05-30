@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
-//import styled from 'styled-components'
 import { Flex, Box } from '@rebass/grid'
 import Section from '../../../components/Section'
 import Title from '../../../components/Title'
@@ -14,7 +13,7 @@ const Accordion = posed.div({
 })
 
 const About = () => {
-  const { data } = useStaticQuery(graphql`
+  const { data, phase } = useStaticQuery(graphql`
     query AboutPage {
       data: allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
@@ -26,10 +25,27 @@ const About = () => {
             html
             id
             frontmatter {
-              phases {
-                name
-                details
+              heroPhoto {
+                childImageSharp {
+                  fluid(quality: 100) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
               }
+            }
+          }
+        }
+      }
+
+      phase: allMarkdownRemark(
+        sort: { order: DESC, fields: [frontmatter___date] }
+        filter: { fileAbsolutePath: { regex: "/(phase)/" } }
+      ) {
+        edges {
+          node {
+            html
+            frontmatter {
+              name
             }
           }
         }
@@ -38,12 +54,15 @@ const About = () => {
   `)
 
   const about = data.edges[0].node.html
-  const phases = data.edges[0].node.frontmatter.phases
+  const phases = phase.edges.map(v => ({
+    name: v.node.frontmatter.name,
+    details: v.node.html,
+  }))
 
   const [open, setOpen] = useState(-1)
 
   return (
-    <Section id="about" style={{ minHeight: '100vh' }}>
+    <Section id="about">
       <Title name="ABOUT" />
       <Flex flexWrap="wrap">
         <Box width={getWidth(12)} py={2}>
@@ -54,25 +73,26 @@ const About = () => {
         </Box>
         <Box width={getWidth(12)} py={2}>
           <Flex flexDirection="column" style={{ height: '100%' }}>
-            {phases.map((v, i) => (
-              <Box
-                key={i}
-                mb={2}
-                onClick={() => setOpen(open === i ? false : i)}
-                style={{ cursor: 'pointer' }}
-              >
-                <h4 style={{ margin: '0', padding: '0.5em 0' }}>{v.name}</h4>
-                <Accordion
-                  style={{ overflow: 'hidden', columns: '300px 2' }}
-                  pose={open === i ? 'open' : 'closed'}
+            {phases &&
+              phases.map((v, i) => (
+                <Box
+                  key={i}
+                  mb={2}
+                  onClick={() => setOpen(open === i ? false : i)}
+                  style={{ cursor: 'pointer' }}
                 >
-                  <div
-                    style={{ columns: '300px 2' }}
-                    dangerouslySetInnerHTML={{ __html: v.details }}
-                  />
-                </Accordion>
-              </Box>
-            ))}
+                  <h4 style={{ margin: '0', padding: '0.5em 0' }}>{v.name}</h4>
+                  <Accordion
+                    style={{ overflow: 'hidden', columns: '300px 2' }}
+                    pose={open === i ? 'open' : 'closed'}
+                  >
+                    <div
+                      style={{ columns: '300px 2' }}
+                      dangerouslySetInnerHTML={{ __html: v.details }}
+                    />
+                  </Accordion>
+                </Box>
+              ))}
           </Flex>
         </Box>
       </Flex>

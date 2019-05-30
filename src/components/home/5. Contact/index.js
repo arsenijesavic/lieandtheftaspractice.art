@@ -8,14 +8,34 @@ import Title from '../../../components/Title'
 
 const Contact = ({ data }) => (
   <Section id="contact">
-    <Flex justifyContent="space-between">
+    <Flex flexDirection="column" justifyContent="space-between">
       <Box>
         <Title name="CONTACT" />
       </Box>
-      <Box alignSelf="center">
+      <Box>
         <h4>
-          <a href="mailto:lieandtheftaspractice@gmail.com">
+          <a
+            style={{ color: '#000' }}
+            href="mailto:lieandtheftaspractice@gmail.com"
+          >
             lieandtheftaspractice@gmail.com
+          </a>
+        </h4>
+        <h4>
+          <a
+            style={{ color: '#000' }}
+            href="mailto:contact@darkodragicevic.com
+            "
+          >
+            contact@darkodragicevic.com
+          </a>
+        </h4>
+        <h4>
+          <a
+            style={{ color: '#000' }}
+            href="mailto:zorica.milisavljevic@goethe.de"
+          >
+            zorica.milisavljevic@goethe.de
           </a>
         </h4>
       </Box>

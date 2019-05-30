@@ -13,43 +13,39 @@ const MemberWrap = styled(Box)`
   border-bottom: 1px solid #fff;
 `
 
-const Wrap = styled.div`
-  width: 960px;
-  margin: 0 auto;
-  padding-bottom: 96px;
-`
-
 const Member = ({ slug, name, photo }) => (
   <MemberWrap width={getWidth(6)} py={3}>
-    <Tooltip
-      html={
-        <div
-          style={{
-            width: '200px',
-            height: '200px',
-            background: 'red',
-          }}
-        >
-          <Img
-            eager={true}
-            fluid={photo && photo.childImageSharp.fluid}
+    {photo && (
+      <Tooltip
+        html={
+          <div
             style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              filter: 'saturate(0%)',
+              width: '200px',
+              height: '200px',
+              background: 'red',
             }}
-          />
-        </div>
-      }
-      trigger="mouseenter"
-      // position="right"
-      // followCursor={true}
-    >
-      <Link style={{ color: '#fff' }} to={slug}>
-        <h4 style={{ padding: '0', margin: '0' }}>{name}</h4>
-      </Link>
-    </Tooltip>
+          >
+            <Img
+              eager={true}
+              fluid={photo && photo.childImageSharp.fluid}
+              style={{
+                width: '100%',
+                height: '100%',
+                objectFit: 'cover',
+                filter: 'saturate(0%)',
+              }}
+            />
+          </div>
+        }
+        trigger="mouseenter"
+        // position="right"
+        // followCursor={true}
+      >
+        <Link style={{ color: '#fff' }} to={slug}>
+          <h4 style={{ padding: '0', margin: '0' }}>{name}</h4>
+        </Link>
+      </Tooltip>
+    )}
   </MemberWrap>
 )
 
@@ -91,15 +87,13 @@ const Team = () => {
     .sort((a, b) => a.order - b.order)
 
   return (
-    <Section id="team" full style={{ background: '#000' }}>
-      <Wrap>
-        <Title color="#fff" name="TEAM" />
-        <Flex style={{ marginTop: '64px' }} flexWrap="wrap">
-          {team.map((v, i) => (
-            <Member key={i} {...v} />
-          ))}
-        </Flex>
-      </Wrap>
+    <Section id="team" bg="#000">
+      <Title color="#fff" name="TEAM" />
+      <Flex style={{ marginTop: '64px' }} flexWrap="wrap">
+        {team.map((v, i) => (
+          <Member key={i} {...v} />
+        ))}
+      </Flex>
     </Section>
   )
 }

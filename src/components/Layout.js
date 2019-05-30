@@ -2,13 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { graphql, useStaticQuery } from 'gatsby'
 import { Helmet } from 'react-helmet'
-import Header from './header'
 import { createGlobalStyle } from 'styled-components'
-
-if (typeof window !== 'undefined') {
-  // eslint-disable-next-line global-require
-  require('smooth-scroll')('a[href*="#"]')
-}
 
 const GlobalStyle = createGlobalStyle`
 
@@ -50,7 +44,7 @@ const GlobalStyle = createGlobalStyle`
   }
 `
 
-const Layout = ({ children }) => {
+const Layout = ({ style, children }) => {
   // eslint-disable-next-line global-require
   // eslint-disable-next-line
   const data = useStaticQuery(graphql`
@@ -64,7 +58,7 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Lie & Theft as Practice</title>
@@ -74,11 +68,11 @@ const Layout = ({ children }) => {
         />
       </Helmet>
       <GlobalStyle />
-      <div>
-        <Header />
+
+      <div style={style}>
         <main>{children}</main>
       </div>
-    </>
+    </div>
   )
 }
 

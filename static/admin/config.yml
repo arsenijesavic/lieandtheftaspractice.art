@@ -22,6 +22,22 @@ collections:
               - { label: name, name: name, widget: string }
               - { label: details, name: details, widget: text }
 
+  - name: 'Phases'
+    label: 'phase'
+    folder: 'src/pages/phase'
+    create: true
+    identifier_field: name
+    slug: '{{name}}'
+    fields:
+      - {
+          label: 'Template Key',
+          name: 'templateKey',
+          widget: 'hidden',
+          default: 'phase',
+        }
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'Body', name: 'body', widget: 'markdown' }
+
   - name: 'event'
     label: 'Event'
     folder: 'src/pages/event'

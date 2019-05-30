@@ -3,11 +3,11 @@ import { Flex, Box } from '@rebass/grid'
 
 const Title = ({ name, color }) => (
   <div style={{ position: 'relative', left: '-52px', color: color }}>
-    <Flex style={{ margin: '2em 0' }}>
-      <Box alignSelf="center" mr={3}>
+    <Flex>
+      <Box style={{ marginTop: '2px' }} alignSelf="center" mr={3}>
         <svg
-          width="36"
-          height="36"
+          width="34"
+          height="34"
           viewBox="0 0 23 23"
           xmlns="http://www.w3.org/2000/svg"
         >
