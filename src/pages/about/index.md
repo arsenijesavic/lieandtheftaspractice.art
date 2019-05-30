@@ -1,5 +1,5 @@
 ---
-heroPhoto: /img/hero.jpg
+heroPhoto: /img/cover.png
 ---
 
 **Lie & Theft as Practice (2019)**
