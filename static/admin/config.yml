@@ -15,26 +15,14 @@ collections:
         fields:
           - { label: 'Hero photo', name: 'heroPhoto', widget: image }
           - { label: 'About', name: 'body', widget: 'markdown' }
-          - label: 'Phases'
-            name: 'phases'
-            widget: 'list'
-            fields:
-              - { label: name, name: name, widget: string }
-              - { label: details, name: details, widget: text }
 
-  - name: 'Phases'
-    label: 'phase'
+  - name: 'phases'
+    label: 'Phase'
     folder: 'src/pages/phase'
     create: true
     identifier_field: name
     slug: '{{name}}'
     fields:
-      - {
-          label: 'Template Key',
-          name: 'templateKey',
-          widget: 'hidden',
-          default: 'phase',
-        }
       - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
