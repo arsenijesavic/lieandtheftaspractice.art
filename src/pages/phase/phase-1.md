@@ -1,7 +1,8 @@
 ---
 name: 'Phase I: February 25 – March 11, 2019'
 ---
-**Next Generation: Lie & Theft as Practice** **Goethe-Institut** **50, Knez Mihailova Street** **Belgrade** 
+**Next Generation: Lie & Theft as Practice** \
+**Goethe-Institut** **50, Knez Mihailova Street** **Belgrade** 
 
 _It has been said that lying is moral._ – Matthew Brannon, Interview with Rosa Vanina Pavone, _Uovo_ (April 2006) 
 
