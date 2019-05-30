@@ -1,7 +1,6 @@
 ---
 heroPhoto: /img/cover.png
 ---
-
 **Lie & Theft as Practice (2019)**
 
 within the platform Next Generation (Goethe-Institut Serbien)
@@ -12,7 +11,7 @@ Lie & Theft as Practice will be one-year process stretching over the next year o
 
 Our aim is to analytically approach the topic of Lie & Theft as Practice implementing them various socio-political and cultural contexts.
 
-\
+ \
 Concept: Darko Dragičević, Zorica Milisavljević\
 Artistic Direction: Darko Dragičević\
 Project Manager: Zorica Milisavljević, Goethe-Institut\
