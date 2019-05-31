@@ -1,5 +1,5 @@
 ---
-heroPhoto: /img/cover.png
+heroPhoto: /img/dragana_tura_img_4188_0.jpg
 ---
 
 **Lie & Theft as Practice (2019)**
