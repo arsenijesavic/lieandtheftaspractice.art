@@ -7,4 +7,4 @@ type: Alter Ego​
 authors:
   - author: Darija Medić
 ---
-![© Darija Medić 41136](/img/img_20190516_191106.jpg "41136")
+![© Darija Medić 41136](/img/img_20190516_191106.jpg "© Darija Medić 41136")
