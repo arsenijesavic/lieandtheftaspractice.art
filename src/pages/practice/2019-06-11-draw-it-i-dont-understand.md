@@ -17,6 +17,6 @@ I am not fat ~ \[12:06]
 
 It is written clearly “Average”~ \[12:09]
 
-\[12:13] ~Face? how do you look like? 
+\[12:13] ~Face photo? What do you look like? 
 
 I’m handsome enough~ \[12:15]
