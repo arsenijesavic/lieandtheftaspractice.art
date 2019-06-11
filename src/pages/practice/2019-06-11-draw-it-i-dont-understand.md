@@ -7,16 +7,16 @@ type: Alter Ego​
 authors:
   - author: Miloš Janjić
 ---
-![ © Miloš Janjić](/img/skrinsot1.jpg "L&TaP_Alter Ego © Miloš Janjić, 28.05.2019")
+![ © Miloš Janjić](/img/skrinsot1.jpg "Screenshot1 © Miloš Janjić")
 
-~Are you fat, are you plump? 
+\[12:05] ~ Are you fat, are you plump? 
 
-I am not fat~
+I am not fat ~ \[12:06]
 
-~You’re not skinny? I don’t like those guys
+\[12:07] ~You’re not skinny? I don’t like those guys
 
-It is written clearly “Average”~
+It is written clearly “Average”~ \[12:09]
 
-~Face? how do you look like? 
+\[12:13] ~Face? how do you look like? 
 
-I’m handsome enough~
+I’m handsome enough~ \[12:15]
