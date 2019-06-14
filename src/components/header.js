@@ -61,13 +61,17 @@ const Header = ({ type }) => {
             ].map((link, i) => (
               <li key={i}>
                 <Link
-                  activeClass="active"
                   to={type === 'scroll' ? link : `/#${link}`}
-                  offset={-40}
-                  spy={true}
-                  hashSpy={true}
-                  smooth={true}
-                  duration={500}
+                  {...(type === 'scroll'
+                    ? {
+                        activeClass: 'active',
+                        offset: -40,
+                        spy: true,
+                        hashSpy: true,
+                        smooth: true,
+                        duration: 500,
+                      }
+                    : {})}
                 >
                   {link}
                 </Link>

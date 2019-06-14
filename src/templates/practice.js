@@ -46,15 +46,22 @@ const Practice = ({ data, ...props }) => {
     <Layout style={{ cursor: `url('/img/arrow.png'), auto` }}>
       <Header />
       <Section onClick={() => props.navigate('/#team')}>
-        <Img
-          fluid={featuredimage.childImageSharp.fluid}
+        <div
           style={{
-            width: '100%',
-            height: '50vh',
-            objectFit: 'cover',
+            width: '960px',
+            height: '368px',
           }}
-        />
-
+        >
+          <Img
+            fluid={featuredimage.childImageSharp.fluid}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              objectPosition: 'center',
+            }}
+          />
+        </div>
         <h2 style={{ padding: '0.5em 0', margin: '0' }}>
           {title.toUpperCase()}
         </h2>
@@ -64,7 +71,10 @@ const Practice = ({ data, ...props }) => {
             authors.map((v, i) => (
               <Link key={i} to={v.url} style={{ color: '#000' }}>
                 <Box px={2}>
-                  <h4>{v.name}, </h4>
+                  <h4>
+                    {v.name}
+                    {i !== authors.length - 1 && ','}{' '}
+                  </h4>
                 </Box>
               </Link>
             ))}
