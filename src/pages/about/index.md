@@ -1,5 +1,6 @@
 ---
 heroPhoto: /img/hero.jpg
+heroPhotoAuthor: '@ Someone'
 ---
 
 **Lie & Theft as Practice (2019)**

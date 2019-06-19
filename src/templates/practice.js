@@ -8,7 +8,6 @@ import { Flex, Box } from '@rebass/grid'
 import Layout from '../components/Layout'
 import Header from '../components/header'
 import Section from '../components/Section'
-import Img from 'gatsby-image'
 
 const Frame = props => {
   return (
@@ -39,40 +38,33 @@ const Practice = ({ data, ...props }) => {
   const {
     htmlAst,
     fields: { authors },
-    frontmatter: { title, featuredimage },
+    frontmatter: { title, type },
   } = data.markdownRemark
 
   return (
     <Layout style={{ cursor: `url('/img/arrow.png'), auto` }}>
       <Header />
-      <Section onClick={() => props.navigate('/#team')}>
-        <div
+      <Section onClick={() => props.navigate('/#practice')}>
+        <h1
           style={{
-            width: '960px',
-            height: '368px',
+            textAlign: 'center',
+            padding: '0.5em 0',
+            fontWeight: '100',
+            textTransform: 'uppercase',
           }}
         >
-          <Img
-            fluid={featuredimage.childImageSharp.fluid}
-            style={{
-              width: '100%',
-              height: '100%',
-              objectFit: 'cover',
-              objectPosition: 'center',
-            }}
-          />
-        </div>
-        <h2 style={{ padding: '0.5em 0', margin: '0' }}>
-          {title.toUpperCase()}
-        </h2>
+          {type}
+        </h1>
+
+        <h2 style={{ padding: '0', margin: '0' }}>{title.toUpperCase()}</h2>
 
         <Flex>
           {authors &&
             authors.map((v, i) => (
               <Link key={i} to={v.url} style={{ color: '#000' }}>
-                <Box px={2}>
-                  <h4>
-                    {v.name}
+                <Box>
+                  <h4 tyle={{ padding: '0.5em 0', margin: '0' }}>
+                    {i === 0 && 'by'} {v.name}
                     {i !== authors.length - 1 && ','}{' '}
                   </h4>
                 </Box>
@@ -111,6 +103,7 @@ export const pageQuery = graphql`
 
       frontmatter {
         title
+        type
         date(formatString: "MMMM DD, YYYY")
         featuredimage {
           childImageSharp {

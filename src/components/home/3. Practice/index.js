@@ -1,39 +1,31 @@
 import React from 'react'
 import { graphql, useStaticQuery, Link } from 'gatsby'
-import Img from 'gatsby-image'
-import styled from 'styled-components'
 import { Flex, Box } from '@rebass/grid'
 import Section from '../../../components/Section'
 import Title from '../../../components/Title'
 import getWidth from '../../../utils/getWidth'
 
-const PracticeWrap = styled.div`
-  overflow: hidden;
-`
-
 const Practice = ({ name, data }) => (
-  <Flex style={{ borderBottom: '1px solid black' }} flexWrap="wrap">
-    <Box width={getWidth(2)}>
-      <Box mb={2}>
-        <h4 style={{ fontWeight: '100' }}>{name.toUpperCase()}</h4>
-      </Box>
+  <Flex flexWrap="wrap">
+    <Box width={getWidth(12)}>
+      <h3 style={{ fontWeight: '500', margin: '1em 0' }}>
+        {name.toUpperCase()}
+      </h3>
     </Box>
 
-    <Box width={getWidth(10)} pl={4}>
-      <Flex>
+    <Box width={getWidth(12)}>
+      <Flex flexWrap="wrap">
         {data.map((v, i) => (
-          <Box key={i} width={getWidth(1)} p={2}>
-            <Link to={v.fields.slug}>
-              <PracticeWrap>
-                <Img
-                  fluid={v.frontmatter.featuredimage.childImageSharp.fluid}
-                  style={{
-                    width: '100%',
-                    height: '100%',
-                    objectFit: 'cover',
-                  }}
-                />
-              </PracticeWrap>
+          <Box
+            key={i}
+            style={{ borderBottom: '1px solid black' }}
+            width={getWidth(12)}
+            p={2}
+          >
+            <Link style={{ color: '#000' }} to={v.fields.slug}>
+              <h4 style={{ fontWeight: '100', margin: '0' }}>
+                - {v.frontmatter.title}
+              </h4>
             </Link>
           </Box>
         ))}

@@ -2,16 +2,11 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 import PropTypes from 'prop-types'
 import Img from 'gatsby-image'
-import styled from 'styled-components'
 import { Flex, Box } from '@rebass/grid'
 import getWidth from '../utils/getWidth'
 import Layout from '../components/Layout'
 import Header from '../components/header'
 import Section from '../components/Section'
-
-const PracticeWrap = styled.div`
-  overflow: hidden;
-`
 
 const TeamMember = ({ data, ...props }) => {
   const {
@@ -45,24 +40,35 @@ const TeamMember = ({ data, ...props }) => {
         {practices.length > 0 && (
           <Flex flexWrap="wrap">
             <Box width={getWidth(12)} p={2}>
-              <h4>practices</h4>
+              <h3
+                style={{
+                  fontWeight: '500',
+                  margin: '1em 0',
+                  textTransform: 'uppercase',
+                }}
+              >
+                practices
+              </h3>
             </Box>
-            {practices.map((v, i) => (
-              <Box key={i} width={getWidth(3)} p={2}>
-                <Link to={v.url}>
-                  <PracticeWrap>
-                    <Img
-                      fluid={v.featuredimage.childImageSharp.fluid}
-                      style={{
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover',
-                      }}
-                    />
-                  </PracticeWrap>
-                </Link>
-              </Box>
-            ))}
+
+            <Box width={getWidth(12)}>
+              <Flex flexWrap="wrap">
+                {practices.map((v, i) => (
+                  <Box
+                    key={i}
+                    style={{ borderBottom: '1px solid black' }}
+                    width={getWidth(12)}
+                    p={2}
+                  >
+                    <Link style={{ color: '#000' }} to={v.url}>
+                      <h4 style={{ fontWeight: '100', margin: '0' }}>
+                        - {v.title}
+                      </h4>
+                    </Link>
+                  </Box>
+                ))}
+              </Flex>
+            </Box>
           </Flex>
         )}
       </Section>

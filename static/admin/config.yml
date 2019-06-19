@@ -14,6 +14,7 @@ collections:
         name: 'about'
         fields:
           - { label: 'Hero photo', name: 'heroPhoto', widget: image }
+          - { label: 'Hero photo author', name: 'heroPhotoAuthor', widget: string }
           - { label: 'About', name: 'body', widget: 'markdown' }
 
   - name: 'phases'
