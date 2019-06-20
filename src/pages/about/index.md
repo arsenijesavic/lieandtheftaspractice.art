@@ -1,6 +1,6 @@
 ---
 heroPhoto: /img/hero.jpg
-heroPhotoAuthor: '@ Someone'
+heroPhotoAuthor: 'Failure as Practice © Goethe-Institut / Foto: Milica Nikolić'
 ---
 
 **Lie & Theft as Practice (2019)**
