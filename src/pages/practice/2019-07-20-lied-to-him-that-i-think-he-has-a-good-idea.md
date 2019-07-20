@@ -8,3 +8,7 @@ authors:
   - author: Lana Pavkov
 ---
 This lie occured in Belgrade, Dorćol, it was sunday 12.05.2019. at 14:17h
+
+
+
+![](/img/lagala-ga-da-mislim-da-ima-dobru-ideju.jpg)
