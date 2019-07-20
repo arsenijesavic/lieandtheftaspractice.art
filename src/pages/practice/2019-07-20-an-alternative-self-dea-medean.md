@@ -14,3 +14,7 @@ Sutradan sam ustala i otišla da nađem posao. U ovom gradu je nemoguće naći p
 Nedostaje mi nekad kuća. Ali ne smem da mislim na to, čim me nešto podseti na kuću, sečem to u korenu. Povući će me u neku destrukciju. Osetim mučnine. Ne mogu da zaboravim sve. Onda mi se telo naglo umori, postane slabo, i sve me peče iznutra. Trudim se da postignem kontrolu nad tim, ali to je prosto nemoguće. Kada se javi jedna sekunda slobodnog vremena, čim moje misli nađu prostor u mojoj glavi, odem u tu slabost. Sva me obuzme. Kao da me vreba, kao da čeka da sam besposlena, da me ščepa i uzme sebi. Onda kažem, Mir Božiji i bude mi još gore. Shvatim da nikad neću počivati u miru. A mir, to je raj. Ako ta destinacija otpada, ostaje samo još jedna. Nerado mislim na nju. Fuj.
 
 Dea Medean
+
+
+
+![](/img/krugovi.jpg)
