@@ -1,7 +1,7 @@
 ---
 templateKey: practice
 title: An alternative self - Dea Medean
-featuredimage: /img/krugovi.jpg
+featuredimage: /img/lagala-da-sam-medeja.jpg
 date: 2019-07-20T11:35:09.133Z
 type: Alter Ego​
 authors:
