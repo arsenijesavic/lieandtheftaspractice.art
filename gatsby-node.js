@@ -36,7 +36,7 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: edge.node.fields.slug,
         component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`,
+          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
         ),
         // additional data can be passed via context
         context: {
@@ -90,7 +90,7 @@ exports.sourceNodes = ({ actions, getNodes, getNode }) => {
           .filter(node2 =>
             node2.frontmatter.authors
               .map(v => v.author)
-              .includes(node.frontmatter.name),
+              .includes(node.frontmatter.name)
           )
           .map(node2 => ({ ...node2.frontmatter, url: node2.fields.slug }))
 

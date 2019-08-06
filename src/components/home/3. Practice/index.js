@@ -65,7 +65,7 @@ const Practices = () => {
           }
         }
       }
-    `,
+    `
   )
 
   const data = practices.edges.reduce((obj, p) => {
