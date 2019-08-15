@@ -1,14 +1,14 @@
-import React from 'react'
-import { graphql, useStaticQuery, Link } from 'gatsby'
-import { Flex, Box } from '@rebass/grid'
-import Section from '../../../components/Section'
-import Title from '../../../components/Title'
-import getWidth from '../../../utils/getWidth'
+import React from "react"
+import { graphql, useStaticQuery, Link } from "gatsby"
+import { Flex, Box } from "@rebass/grid"
+import Section from "../../../components/Section"
+import Title from "../../../components/Title"
+import getWidth from "../../../utils/getWidth"
 
 const Practice = ({ name, data }) => (
   <Flex flexWrap="wrap">
     <Box width={getWidth(12)}>
-      <h3 style={{ fontWeight: '500', margin: '1em 0' }}>
+      <h3 style={{ fontWeight: "500", margin: "1em 0" }}>
         {name.toUpperCase()}
       </h3>
     </Box>
@@ -18,12 +18,12 @@ const Practice = ({ name, data }) => (
         {data.map((v, i) => (
           <Box
             key={i}
-            style={{ borderBottom: '1px solid black' }}
+            style={{ borderBottom: "1px solid black" }}
             width={getWidth(12)}
             p={2}
           >
-            <Link style={{ color: '#000' }} to={v.fields.slug}>
-              <h4 style={{ fontWeight: '100', margin: '0' }}>
+            <Link style={{ color: "#000" }} to={v.fields.slug}>
+              <h4 style={{ fontWeight: "100", margin: "0" }}>
                 - {v.frontmatter.title}
               </h4>
             </Link>
@@ -65,24 +65,28 @@ const Practices = () => {
           }
         }
       }
-    `
+    `,
   )
 
-  const data = practices.edges.reduce((obj, p) => {
-    const { type } = p.node.frontmatter
+  const data =
+    practices &&
+    practices.edges &&
+    practices.edges.reduce((obj, p) => {
+      const { type } = p.node.frontmatter
 
-    return {
-      ...obj,
-      [type]: [...(obj[type] ? obj[type] : []), ...p.node],
-    }
-  }, {})
+      return {
+        ...obj,
+        [type]: [...(obj && obj[type] ? obj[type] : []), p.node],
+      }
+    }, {})
 
   return (
     <Section id="practice" bg="#F2F2F2">
       <Title name="PRACTICES" />
-      {Object.keys(data).map((v, i) => (
-        <Practice key={i} name={v} data={data[v]} />
-      ))}
+      {data &&
+        Object.keys(data).map((v, i) => (
+          <Practice key={i} name={v} data={data[v]} />
+        ))}
     </Section>
   )
 }
