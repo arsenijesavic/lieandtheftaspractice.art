@@ -1,6 +1,6 @@
 ---
 templateKey: practice
-title: Alter Ego_ Ana Vuković
+title: 'The heart breaker: Jasminka Krtolica'
 featuredimage: /img/2.jpg
 date: 2019-09-10T16:24:59.467Z
 type: Alter Ego​
