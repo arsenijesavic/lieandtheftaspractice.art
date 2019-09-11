@@ -8,3 +8,5 @@ authors:
   - author: Ana Vuković
 ---
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DDAVJ5J3whg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+Translated in English: "Last night I wanted to steal a key from one of those machines that are working on Republic square reconstruction, but at the end I just stole a stone."
