@@ -9,6 +9,8 @@ authors:
 ---
 ![© Maja Bosnić](/img/screen-shot-2019-05-19-at-11.05.12-am.png "@talktothishand instagram grid sample © Maja Bosnić")
 
+![© Maja Bosnić](/img/screen-shot-2019-05-19-at-11.05.12-am.png "@talktothishand instagram grid © Maja Bosnić")
+
 I am Talking Hands from Instagram – @talktothishand.
 
 Some time ago, I somehow got completely lost in information. \
