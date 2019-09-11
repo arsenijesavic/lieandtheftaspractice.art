@@ -21,4 +21,8 @@ I work as a hairdresser, with my best friend, so I have a lot of girlfriends as 
 
 All I want in my and my son’s life is to be healthy and happy and if you believe it, you will be it.
 
+
+
+This audio recording is about my process during the time when I was creating this profile and how I felt and what I thought throughth the process. It is only in Serbian.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ozwCOwZmagE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
