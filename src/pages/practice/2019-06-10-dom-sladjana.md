@@ -23,13 +23,11 @@ S: I am single now, but I have a few play partners. While I was in this second r
 
 **K: How does this dynamic in your private life influence your daily life, your job, or your other relationships?**
 
-S: Emotionally there are quite intertwined. I like the feeling of being in control, of someone trusting me and depending on me. I am often in the position of being a decision maker and I like telling people what to do. My job is sort of organizational, I work within the collective where there is this mutual trust and understanding, but I’ve always had an issue with authority, I’m very stubborn. My friends are aware of my character and that I am a “control freak”, but as I mentioned, they are not aware of BDSM preferences, they do joke around that I would make a great Dominatrix though. It’s funny how vanilla people see it, all my friends are vanilla actually. The portrayal of BDSM in this environment has tended to be very negative, often associating it with violence, danger, abuse, madness and criminality. But actually people who are into BDSM are no different from others in terms of emotional well-being or upbringing, and that they are no more likely to get serious injuries from their sex lives, or to be criminal, than anybody else. 
+S: Emotionally they are quite intertwined. I like the feeling of being in control, of someone trusting me and depending on me. I am often in the position of being a decision maker and I like telling people what to do. My job is sort of organizational, I work within the collective where there is this mutual trust and understanding, but I’ve always had an issue with authority, I’m very stubborn. My friends are aware of my character and that I am a “control freak”, but as I mentioned, they are not aware of BDSM preferences, they do joke around that I would make a great Dominatrix though. It’s funny how vanilla people see it, all my friends are vanilla actually. The portrayal of BDSM in this environment has tended to be very negative, often associating it with violence, danger, abuse, madness and criminality. But actually people who are into BDSM are no different from others in terms of emotional well-being or upbringing, and that they are no more likely to get serious injuries from their sex lives, or to be criminal, than anybody else. 
 
 **\[…]**
 
 **To be continued**
-
-
 
 __
 
