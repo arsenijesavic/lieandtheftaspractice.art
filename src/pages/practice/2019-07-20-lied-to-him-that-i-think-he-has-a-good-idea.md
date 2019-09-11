@@ -7,7 +7,7 @@ type: At least once… Everyday!
 authors:
   - author: Lana Pavkov
 ---
-This lie occured in Belgrade, Dorćol, it was Sunday 12.05.2019. at 14:17h
+This lie occured in Belgrade, Dorćol, it was Sunday, May 12th 2019 at 14:17h
 
 He felt good.
 
