@@ -7,6 +7,8 @@ type: Alter Ego​
 authors:
   - author: Maja Bosnić
 ---
+![© Maja Bosnić](/img/screen-shot-2019-05-19-at-11.05.12-am.png "@talktothishand instagram grid sample © Maja Bosnić")
+
 I am Talking Hands from Instagram – @talktothishand.
 
 Some time ago, I somehow got completely lost in information. \
