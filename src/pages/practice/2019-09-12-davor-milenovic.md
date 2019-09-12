@@ -7,4 +7,6 @@ type: Alter Ego​
 authors:
   - author: Tamara Spalajković
 ---
+![@Aleksandar Mihajlovic](/img/hajlajtprvizadatak.jpg "Sunka @ Aleksandar Mihajlovic")
+
 Davor Milenovic is a facebook profile of a heart-broken con man. His frauds were exposed by a man on a facebook group Davor was using for selling stolen cars so he decided to create a new profile where he would continue with merchandise but this time with “legal” stuff. While selling, Davor post different motivational and self-care messages to recover trust from customers.
