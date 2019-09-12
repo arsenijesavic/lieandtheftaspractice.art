@@ -9,4 +9,4 @@ authors:
 ---
 ![© Stevan Beljić](/img/1.-cactus.jpg "© Stevan Beljić")
 
-This photo is part of a series which presents a journey of a cactus that I picked up somewhere in my neighborhood.
+This photo is part of a series which presents a journey of a cactus that I stole somewhere in my neighborhood.
