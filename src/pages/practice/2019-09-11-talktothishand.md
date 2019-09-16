@@ -1,13 +1,13 @@
 ---
 templateKey: practice
 title: '@talktothishand'
-featuredimage: /img/screen-shot-2019-05-19-at-11.05.12-am.png
+featuredimage: /img/website-alter-ego.png
 date: 2019-05-19T21:41:26.199Z
 type: Alter Ego​
 authors:
   - author: Maja Bosnić
 ---
-![© Maja Bosnić](/img/screen-shot-2019-05-19-at-11.05.12-am.png "@talktothishand instagram grid © Maja Bosnić")
+![© Maja Bosnić](/img/website-alter-ego.png "One line of Instagram grid for @talktothishand © Maja Bosnić")
 
 I am Talking Hands from Instagram – @talktothishand.
 
