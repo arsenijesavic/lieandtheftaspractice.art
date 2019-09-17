@@ -2,7 +2,7 @@
 templateKey: practice
 title: '@talktothishand'
 featuredimage: /img/website-alter-ego.png
-date: 2019-05-19T21:41:26.199Z
+date: 2019-09-16T21:41:00.000Z
 type: Alter Ego​
 authors:
   - author: Maja Bosnić
@@ -27,7 +27,7 @@ It is comforting and assuring to know that you are able to think and react accor
 Also, I knew that I would be able to follow the natural changes that slowly appear in the flow of popular thoughts today. 
 
 So that was sorted. \
-I became so much accustomed to reading top quotes on Instagram every day, that sometimes, I would confuse the quotes I was living by one day, with the ones I live by the day before. \
+I became so much accustomed to reading top quotes on Instagram every day, that sometimes, I would confuse the quotes I was living by one day, with the ones I lived by the day before. \
 So, day by day, I started selecting fewer quotes. \
 Finally, I started picking only two quotes per day and writing them on my hands. \
 Quote per palm. \
@@ -51,7 +51,7 @@ Today, I am one week old. \
 My Instagram insights say that I have had 30 profile visits in the last 7 days, I have reached 27 accounts and made 57 impressions. \
 I don’t yet know from what regions of the world my audience is from, because I need at least 100 followers. \
 But, at the moment I know that I have 32 followers, while I’m following 95 accounts. \
-In my first week I created 21 posts and most popular one is my right hand palm with “this is all there is” written on it. \
+In my first week I created 21 posts and most popular one is my right hand palm with “this is all there is to it” written on it. \
 I will continue to post two most popular quotes on Instagram on my palms, next to my face, every day. \
 And I will try to comment and heart more. \
 Let’s see how I grow. \
