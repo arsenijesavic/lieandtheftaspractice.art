@@ -9,8 +9,6 @@ authors:
 ---
 ![© Dušan Savić](/img/time_stole_life_postponed.jpg "© Dušan Savić")
 
-
-
 are you coming
 
 ```
@@ -35,4 +33,6 @@ you were at your mom's
 
 
 
-I took a week off from life, lied to all the people about our previously agreed plans.
+
+
+_I took a week off from life, lied to all the people about our previously agreed plans._
