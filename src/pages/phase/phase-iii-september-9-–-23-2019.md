@@ -8,3 +8,5 @@ During this two-week phase, we aim to critically analyze the roles and responsib
 The first week of the project aims to strengthen the neutral space, the foundations of which are based on mutual trust and support. Tasks and scores from contemporary performing practices will serve to further shape the emerging forms of exchange and collaboration. 
 
 During the second week, we will be working on the development of the choreographic materials that will be presented to the public individually, as well as the entire group as a whole, on Friday, September 20th from 8 pm to 10 pm at the premises of the Magacin Cultural Center in Belgrade. This event is also the first presentation of collaborators on the project to the public.
+
+A production by Goethe-Institut Belgrade / Supported by Stanica, Service for contemporary dance Belgrade
