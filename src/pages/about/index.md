@@ -16,3 +16,7 @@ Concept: Darko Dragičević, Zorica Milisavljević\
 Artistic Direction: Darko Dragičević\
 Project Manager: Zorica Milisavljević, Goethe-Institut\
 Responsible/Director of the Goethe-Institut: Frank Baumann
+
+Artistic Collaborators: Stevan Beljić, Maja Bosnić, Luka Cvetković, Miloš Janjić, Katarina Kostandinović, Darija Medić, Lana Pavkov, Dušan Savić, Tamara Spalajković, Ana Vuković 
+
+Lie & Theft as Practice is a project of the Goethe-Institut Serbia within the Next Generation platform.
