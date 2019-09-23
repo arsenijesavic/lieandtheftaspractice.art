@@ -1,6 +1,9 @@
 ---
 name: 'Phase III: September 9 – 23, 2019'
 ---
+**Next Generation: Lie & Theft as Practice**\
+**Magacin, Kraljevića Marka 4-6, Belgrade**
+
 The September workshop of the two-year project "Lie and Theft as Practice", led by Darko Dragičević, is a phase during which collaborators will work on developing movement and speech practices through methodologies derived from contemporary dance, performing and visual arts.
 
 During this two-week phase, we aim to critically analyze the roles and responsibilities of contemporary artistic practices in the pervasive toxic states of society, as well as its effects on the irreversible consequences on the future of our planet. The role of the individual within the group, as well as questions of the authorship through artistic exchanges, are just some of the motives that will serve as materials for the long-term development of potentially embodied solutions.
