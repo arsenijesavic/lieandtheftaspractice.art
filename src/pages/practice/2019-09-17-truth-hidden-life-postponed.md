@@ -31,8 +31,6 @@ you were at your mom's
                        sure sure
 ```
 
+**__**
 
-
-
-
-_I took a week off from life, lied to all the people about our previously agreed plans._
+**_I took a week off from life, lied to all the people about our previously agreed plans._**
