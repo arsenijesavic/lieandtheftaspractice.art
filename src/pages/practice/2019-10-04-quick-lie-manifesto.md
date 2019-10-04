@@ -1,28 +1,10 @@
 ---
 templateKey: practice
-title: quick lie manifesto
+title: Quick lie manifesto
 featuredimage: /img/probna_05-stole-a-sound-sample-belgrade-24052019-1137.jpg
 date: 2019-10-04T12:20:15.824Z
 type: Manifestos
 authors:
   - author: Miloš Janjić
 ---
-Sve je laž i ništa nije potpuna istina, samim tim sve je inficirano lažima.
-
-U laži su kratke noge, a u krađi su kratke ruke.
-
-Svaka naredna laž je lakša nakon prve, a u tebi je sve nekako teže nakon prve laži.
-
-Kad lazeš kradeš nečije pravo na istinu, kad kradeš lažeš nečiju realnost.
-
-Malo belih, malo crnih laži, i eto snega na televizijskom ekranu, prekid programa usred preopterećenosti.
-
-Nakon laži počneš da veruješ u astrofiziku, horoskop, čudotvorne sile, jer ti je nužna uteha i samoopravdanje.
-
-Svako je od nekog nešto ukrao, malo lagao i izmenio, i proglasio ga svojim.
-
-Ako kradeš od sebe u budućem vremenu, lažeš onog sebe u prošlom vremenu.
-
-Kolikim količinama laži sebe obasipam, nalazim se na granici između ljubavi i mržnje sebe.
-
-Tajna je pitoma reč obavijena krznom laži.
+![Everything is a lie, and nothing holds a whole truth,therefore everything is infected with lies. Lie has short legs, robbery has short arms. Every next lie gets easier,and inside you everything seems to be heavier after the first lie.When you lie, you steal someone's right for truth,when you steal, you lie someone's reality. Little bit of white lies, little bit of dark lies, and there is a snow on a TV screen,no signal because of network overload. After lying, you start to believe inastrophysics,horoscope,miraculous powers,because you are desprete for comfort and self-justification,Everyone has stolen something from someone, changed it a bit, lied a bit and named it after one self.If you steal from yourself from future,you lie yourself from the past.As much as I pour lies on myself, I stand on the edge between love and hate. A secret is a tamed word dressed in the fur of lies. ](/img/20191004_170742.jpg)
