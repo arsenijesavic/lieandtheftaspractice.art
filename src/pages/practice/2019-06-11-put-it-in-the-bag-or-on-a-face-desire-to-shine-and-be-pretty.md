@@ -1,6 +1,6 @@
 ---
 templateKey: practice
-title: Put it on a lips or in a bag
+title: Put it on lips or in a bag
 featuredimage: /img/probna_05-stole-a-sound-sample-belgrade-24052019-1137.jpg
 date: 2019-06-11T15:11:06.990Z
 type: At least once… Everyday!
