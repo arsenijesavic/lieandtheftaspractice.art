@@ -3,7 +3,7 @@ templateKey: practice
 title: Lie Manifesto
 featuredimage: /img/lagala-sebe-da-znam-ko-sam-i-sta-zelim.jpg
 date: 2019-09-24T10:00:37.098Z
-type: At least once… Everyday!
+type: Manifestos
 authors:
   - author: Lana Pavkov
 ---
