@@ -11,9 +11,11 @@ authors:
 
 as 
 
-\#practice / #starting #point
+\#practice 
 
-\#makse #sense #simply #because #demand for #speed and #content is constantly #growing and #everybody #must **\#deliver**
+\= #makes #sense 
+
+since the #demand for #fast and #content #production is constantly #growing and #everybody #must **\#deliver**
 
 \#must #answer #must #say #must #make #must #do #nomatterwhat
 
