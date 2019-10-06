@@ -15,7 +15,7 @@ as
 
 \= #makes #sense 
 
-since the #demand for #fast #content #production is constantly #growing and #everybody #must **\#deliver**
+since the #demand for #fast #content #production is constantly #growing and #everybody #must **\#deliver** 
 
 \#must #answer #must #say #must #make #must #do #nomatterwhat
 
