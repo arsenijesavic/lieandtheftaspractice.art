@@ -3,7 +3,7 @@ templateKey: practice
 title: '#Manifesto => #Lie + #Theft '
 featuredimage: /img/probna_05-stole-a-sound-sample-belgrade-24052019-1137.jpg
 date: 2019-05-25T18:39:00.000Z
-type: At least once… Everyday!
+type: Manifestos
 authors:
   - author: Maja Bosnić
 ---
