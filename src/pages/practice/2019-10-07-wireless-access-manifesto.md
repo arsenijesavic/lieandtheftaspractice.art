@@ -9,17 +9,11 @@ authors:
 ---
 This agreement sets out the terms and conditions on which wireless internet access is provided free of charge to the public.
 
-
-
 Your consensus to these terms & conditions is required to access and use the service.
-
-
 
 Moreover, additional promotional and marketing material will be made available to you following your respective consent;
 
-
-
-1.        Extent of the Service
+1. ##    Extent of the Service
 
 1.1    By accessing the Service you acknowledge that you connect to a public network and therefore use of Internet Services is carried out entirely at your own risk.
 
@@ -39,7 +33,7 @@ Moreover, additional promotional and marketing material will be made available t
 
 1.6  We reserve the right at all times to withdraw the Service, change the specifications or manner of use of the Service, to change access codes, usernames, passwords or other security information necessary to access the Service.
 
-2.        Use of the Service
+2. ##    Use of the Service
 
 2.1   You must not use the Service to access Internet Services, or send or receive e-mails, which:
 
@@ -65,7 +59,7 @@ Moreover, additional promotional and marketing material will be made available t
 
 2.5  The Service is intended for consumer use only. In the event that you use the Service for commercial purposes we would specifically refer you to clause 5.2 below.
 
-3.        Criminal Activity
+3. ##    Criminal Activity
 
 3.1   You must not use the Service to engage in any activity which constitutes, or is capable of constituting a criminal offence, in any state throughout the world.
 
@@ -75,11 +69,11 @@ Moreover, additional promotional and marketing material will be made available t
 
 3.4    You further agree we are entitled to co-operate with law enforcement authorities and rights-holders in the investigation of any suspected or alleged illegal activity by you which may include, but is not limited to, disclosure of such information as we have (whether pursuant to clause 3.3 or otherwise), and we are entitled to provide them by law, to law enforcement authorities or rights-holders.
 
-4.        Our Use of your Information
+4. ##    Our Use of your Information
 
 4.1   During your connection process you can optionally choose to login with one of your social accounts or your personal email for AIA promotional purposes such as news and offers. We confirm that we shall use the contact details you provide to us solely for the purposes of contacting you with marketing information, updates, promotions and special offers relating to our business.
 
-5.     Other Terms
+5. ## Other Terms
 
 5.1  You agree to compensate us fully for any claims or legal action  made or threatened against us by someone else because you have used the Service in breach of these terms and conditions, and in particular clause 2.1 to 2.3  and 3.1 above.
 
