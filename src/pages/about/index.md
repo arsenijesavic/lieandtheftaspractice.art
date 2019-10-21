@@ -1,6 +1,6 @@
 ---
-heroPhoto: /img/2000x1333_201808_failureproject_milicanikolicrestobbw-29-of-25-.jpg
-heroPhotoAuthor: 'Failure as Practice © Goethe-Institut / Foto: Milica Nikolić'
+heroPhoto: /img/lieandtheftaspractice_img_3350.jpg
+heroPhotoAuthor: 'Lie & Theft as Practice © Goethe-Institut / Foto: Zorica Milisavljević'
 ---
 **Lie & Theft as Practice (2019)**
 
