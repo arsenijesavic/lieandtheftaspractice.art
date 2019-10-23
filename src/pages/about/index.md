@@ -1,5 +1,5 @@
 ---
-heroPhoto: /img/lieandtheftaspractice_img_3350.jpg
+heroPhoto: /img/latap_hp_img_3350.jpg
 heroPhotoAuthor: 'Lie & Theft as Practice © Goethe-Institut / Foto: Zorica Milisavljević'
 ---
 **Lie & Theft as Practice (2019)**
