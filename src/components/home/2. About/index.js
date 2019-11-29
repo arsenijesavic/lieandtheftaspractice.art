@@ -38,7 +38,7 @@ const About = () => {
       }
 
       phase: allMarkdownRemark(
-        sort: { order: ASC, fields: [frontmatter___date] }
+        sort: { order: ASC, fields: [frontmatter___from] }
         filter: { fileAbsolutePath: { regex: "/(phase)/" } }
       ) {
         edges {
@@ -102,6 +102,7 @@ const About = () => {
                       columnGap: "5em",
                       breakInside: "avoid",
                       textAlign: "justify",
+                      height: 0,
                     }}
                     pose={open === i ? "open" : "closed"}
                   >
