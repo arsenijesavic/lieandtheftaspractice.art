@@ -1,15 +1,15 @@
-import React, { useState } from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import { Flex, Box } from '@rebass/grid'
-import Section from '../../../components/Section'
-import Title from '../../../components/Title'
+import React, { useState } from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import { Flex, Box } from "@rebass/grid"
+import Section from "../../../components/Section"
+import Title from "../../../components/Title"
 //import Collapsible from 'react-collapsible'
-import getWidth from '../../../utils/getWidth'
-import posed from 'react-pose'
+import getWidth from "../../../utils/getWidth"
+import posed from "react-pose"
 
 const Accordion = posed.div({
   closed: { height: 0 },
-  open: { height: 'auto' },
+  open: { height: "auto" },
 })
 
 const About = () => {
@@ -38,7 +38,7 @@ const About = () => {
       }
 
       phase: allMarkdownRemark(
-        sort: { order: DESC, fields: [frontmatter___date] }
+        sort: { order: ASC, fields: [frontmatter___date] }
         filter: { fileAbsolutePath: { regex: "/(phase)/" } }
       ) {
         edges {
@@ -68,45 +68,45 @@ const About = () => {
         <Box width={getWidth(12)} py={2}>
           <div
             style={{
-              columns: '300px 2',
-              columnGap: '5em',
-              breakInside: 'avoid',
-              textAlign: 'justify',
+              columns: "300px 2",
+              columnGap: "5em",
+              breakInside: "avoid",
+              textAlign: "justify",
             }}
             dangerouslySetInnerHTML={{ __html: about }}
           />
         </Box>
         <Box width={getWidth(12)} py={2}>
-          <Flex flexDirection="column" style={{ height: '100%' }}>
+          <Flex flexDirection="column" style={{ height: "100%" }}>
             {phases &&
               phases.map((v, i) => (
                 <Box
                   key={i}
                   mb={2}
                   onClick={() => setOpen(open === i ? false : i)}
-                  style={{ cursor: 'pointer' }}
+                  style={{ cursor: "pointer" }}
                 >
                   <h4
                     style={{
-                      margin: '0',
-                      padding: '0.5em 0',
-                      fontWeight: '500',
+                      margin: "0",
+                      padding: "0.5em 0",
+                      fontWeight: "500",
                     }}
                   >
                     {v.name}
                   </h4>
                   <Accordion
                     style={{
-                      overflow: 'hidden',
-                      columns: '300px 2',
-                      columnGap: '5em',
-                      breakInside: 'avoid',
-                      textAlign: 'justify',
+                      overflow: "hidden",
+                      columns: "300px 2",
+                      columnGap: "5em",
+                      breakInside: "avoid",
+                      textAlign: "justify",
                     }}
-                    pose={open === i ? 'open' : 'closed'}
+                    pose={open === i ? "open" : "closed"}
                   >
                     <div
-                      style={{ columns: '300px 2' }}
+                      style={{ columns: "300px 2" }}
                       dangerouslySetInnerHTML={{ __html: v.details }}
                     />
                   </Accordion>

@@ -1,10 +1,13 @@
 ---
-name: 'Phase IV: November 22 – December 11, 2019'
+name: "Phase IV: November 22 – December 11, 2019"
+from: 2019-11-22T00:00:00.000Z
+to: 2019-12-11T00:00:00.000Z
 ---
+
 **Next Generation: Lie & Theft as Practice**\
 **Magacin, Kraljevića Marka 4-6, Belgrade**
 
-Last, 4th phase of the project ‘Lie & Theft as Practice’ in the year 2019 starts with two Workshops by two German choreographers and dance artists Martin Sonderkamp and Christina Ciupke. 
+Last, 4th phase of the project ‘Lie & Theft as Practice’ in the year 2019 starts with two Workshops by two German choreographers and dance artists Martin Sonderkamp and Christina Ciupke.
 
 First Workshop which will be held from Friday, November 22nd until Sunday, November 24th is with Martin Sonderkamp currently teaching as Professor of Choreography at DOCH – Stockholm University of The Arts.
 
@@ -14,9 +17,9 @@ _The workshop serves as a platform to sample the ideas, methods and materials th
 
 Second workshop from November 29th to December 1st, 2019 is with Berlin based choreographer and performer Christina Ciupke. For the purposes of the Workshop Christina Ciupke writes the following:
 
-_Everything that is processed by memory is, to some extent, fiction and appropriation of various sources. We continuously mix our own stories and references with the stories of others. The process of memory is voluntary and involuntary, conscious and unconscious, an ongoing layering of collective memory._ 
+_Everything that is processed by memory is, to some extent, fiction and appropriation of various sources. We continuously mix our own stories and references with the stories of others. The process of memory is voluntary and involuntary, conscious and unconscious, an ongoing layering of collective memory._
 
-_When does reality blur? Where are the limits of fiction?_ 
+_When does reality blur? Where are the limits of fiction?_
 
 _Do we walk a blurred line between fact and fiction, between appropriation and theft, when we tell the story of a story, when we write a poem inspired by another poem, when we write a line of text, when we improvise a movement that is always based on the memory of a movement, when we reinvent a song that we hardly remember?_
 

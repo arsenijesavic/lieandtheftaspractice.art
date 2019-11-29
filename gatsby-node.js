@@ -1,6 +1,6 @@
-const path = require('path')
-const { createFilePath } = require('gatsby-source-filesystem')
-const { fmImagesToRelative } = require('gatsby-remark-relative-images')
+const path = require("path")
+const { createFilePath } = require("gatsby-source-filesystem")
+const { fmImagesToRelative } = require("gatsby-remark-relative-images")
 
 exports.createPages = ({ actions, graphql }) => {
   const { createPage } = actions
@@ -36,12 +36,10 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: edge.node.fields.slug,
         component: path.resolve(
-          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`
+          `src/templates/${String(edge.node.frontmatter.templateKey)}.js`,
         ),
-        // additional data can be passed via context
-        context: {
-          id,
-        },
+
+        context: { id },
       })
     })
   })
@@ -53,85 +51,50 @@ exports.onCreateNode = ({ node, actions, getNode, getNodes }) => {
 
   if (node.internal.type === `MarkdownRemark`) {
     const value = createFilePath({ node, getNode })
-    createNodeField({
-      name: `slug`,
-      node,
-      value,
-    })
+    createNodeField({ name: `slug`, node, value })
   }
 }
 
 exports.sourceNodes = ({ actions, getNodes, getNode }) => {
   const { createNodeField } = actions
   getNodes()
-    .filter(node => node.internal.type === 'MarkdownRemark')
+    .filter(node => node.internal.type === "MarkdownRemark")
     .forEach(node => {
-      if (node.frontmatter.templateKey === 'practice') {
+      if (node.frontmatter.templateKey === "practice") {
         const authors = node.frontmatter.authors.map(v => v.author)
         const authorNode = getNodes()
-          .filter(node2 => node2.internal.type === 'MarkdownRemark')
-          .filter(node2 => node2.frontmatter.templateKey === 'team')
+          .filter(node2 => node2.internal.type === "MarkdownRemark")
+          .filter(node2 => node2.frontmatter.templateKey === "team")
           .filter(node2 => authors.includes(node2.frontmatter.name))
           .map(node2 => ({ ...node2.frontmatter, url: node2.fields.slug }))
 
         if (authorNode) {
           createNodeField({
             node,
-            name: 'authors',
+            name: "authors",
             value: [...authorNode],
           })
         }
       }
 
-      if (node.frontmatter.templateKey === 'team') {
+      if (node.frontmatter.templateKey === "team") {
         const practices = getNodes()
-          .filter(node2 => node2.internal.type === 'MarkdownRemark')
-          .filter(node2 => node2.frontmatter.templateKey === 'practice')
+          .filter(node2 => node2.internal.type === "MarkdownRemark")
+          .filter(node2 => node2.frontmatter.templateKey === "practice")
           .filter(node2 =>
             node2.frontmatter.authors
               .map(v => v.author)
-              .includes(node.frontmatter.name)
+              .includes(node.frontmatter.name),
           )
           .map(node2 => ({ ...node2.frontmatter, url: node2.fields.slug }))
 
         if (practices) {
           createNodeField({
             node,
-            name: 'practices',
+            name: "practices",
             value: [...practices],
           })
         }
       }
     })
 }
-
-// exports.onCreateWebpackConfig = ({ actions, stage }) => {
-//   if (stage === "build-html") {
-//     actions.setWebpackConfig({
-//       module: {
-//         rules: [
-//           {
-//             test: /firebase/,
-//             use: ["null-loader"],
-//           },
-//           {
-//             test: /react-p5-wrapper/,
-//             use: ["null-loader"],
-//           },
-//           {
-//             test: /react-new-window/,
-//             use: ["null-loader"],
-//           },
-//           {
-//             test: /pizzicato/,
-//             use: ["null-loader"],
-//           },
-//           {
-//             test: /sketch/,
-//             use: ["null-loader"],
-//           },
-//         ],
-//       },
-//     })
-//   }
-// }

@@ -6,105 +6,111 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: 'pages'
-    label: 'Pages'
+  - name: "pages"
+    label: "Pages"
     files:
-      - file: 'src/pages/about/index.md'
-        label: 'About'
-        name: 'about'
+      - file: "src/pages/about/index.md"
+        label: "About"
+        name: "about"
         fields:
-          - { label: 'Hero photo', name: 'heroPhoto', widget: image }
-          - { label: 'Hero photo author', name: 'heroPhotoAuthor', widget: string }
-          - { label: 'About', name: 'body', widget: 'markdown' }
+          - { label: "Hero photo", name: "heroPhoto", widget: image }
+          - {
+              label: "Hero photo author",
+              name: "heroPhotoAuthor",
+              widget: string,
+            }
+          - { label: "About", name: "body", widget: "markdown" }
 
-  - name: 'phases'
-    label: 'Phase'
-    folder: 'src/pages/phase'
+  - name: "phases"
+    label: "Phase"
+    folder: "src/pages/phase"
     create: true
     identifier_field: name
-    slug: '{{name}}'
+    slug: "{{name}}"
     fields:
-      - { label: 'Name', name: 'name', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "From", name: "from", widget: "date" }
+      - { label: "To", name: "to", widget: "date" }
+      - { label: "Body", name: "body", widget: "markdown" }
 
-  - name: 'event'
-    label: 'Event'
-    folder: 'src/pages/event'
+  - name: "event"
+    label: "Event"
+    folder: "src/pages/event"
     create: true
     identifier_field: name
-    slug: '{{name}}'
+    slug: "{{name}}"
     fields:
       - {
-          label: 'Template Key',
-          name: 'templateKey',
-          widget: 'hidden',
-          default: 'event',
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "event",
         }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Featured Image', name: 'featuredimage', widget: image }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Featured Image", name: "featuredimage", widget: image }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Date", name: "date", widget: "datetime" }
 
-  - name: 'practice'
-    label: 'Practice'
-    folder: 'src/pages/practice'
+  - name: "practice"
+    label: "Practice"
+    folder: "src/pages/practice"
     create: true
-    slug: '{{year}}-{{month}}-{{day}}-{{title}}'
+    slug: "{{year}}-{{month}}-{{day}}-{{title}}"
     fields:
       - {
-          label: 'Template Key',
-          name: 'templateKey',
-          widget: 'hidden',
-          default: 'practice',
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "practice",
         }
-      - { label: 'Title', name: 'title', widget: 'string' }
-      - { label: 'Featured Image', name: 'featuredimage', widget: image }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Featured Image", name: "featuredimage", widget: image }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Date", name: "date", widget: "datetime" }
       - {
-          label: 'Type',
-          name: 'type',
-          widget: 'select',
-          options: ['Alter Ego​', 'At least once… Everyday!', 'Manifestos'],
+          label: "Type",
+          name: "type",
+          widget: "select",
+          options: ["Alter Ego​", "At least once… Everyday!", "Manifestos"],
         }
       - {
-          label: 'Authors',
-          name: 'authors',
-          widget: 'list',
+          label: "Authors",
+          name: "authors",
+          widget: "list",
           fields:
             [
               {
-                label: 'Author',
-                name: 'author',
-                widget: 'relation',
-                collection: 'team',
-                searchFields: ['name'],
-                valueField: 'name',
-                displayFields: ['name'],
+                label: "Author",
+                name: "author",
+                widget: "relation",
+                collection: "team",
+                searchFields: ["name"],
+                valueField: "name",
+                displayFields: ["name"],
               },
             ],
         }
 
-  - name: 'team'
-    label: 'Team'
-    folder: 'src/pages/team'
+  - name: "team"
+    label: "Team"
+    folder: "src/pages/team"
     create: true
     identifier_field: name
-    slug: '{{name}}'
+    slug: "{{name}}"
     fields:
       - {
-          label: 'Template Key',
-          name: 'templateKey',
-          widget: 'hidden',
-          default: 'team',
+          label: "Template Key",
+          name: "templateKey",
+          widget: "hidden",
+          default: "team",
         }
-      - { label: 'Name', name: 'name', widget: 'string' }
-      - { label: 'Body', name: 'body', widget: 'markdown' }
-      - { label: 'Photo', name: 'photo', widget: image }
+      - { label: "Name", name: "name", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+      - { label: "Photo", name: "photo", widget: image }
       - {
-          label: 'Type',
-          name: 'type',
-          widget: 'select',
-          options: ['member', 'guest'],
+          label: "Type",
+          name: "type",
+          widget: "select",
+          options: ["member", "guest"],
         }
-      - { label: 'Order', name: 'order', widget: number }
+      - { label: "Order", name: "order", widget: number }
