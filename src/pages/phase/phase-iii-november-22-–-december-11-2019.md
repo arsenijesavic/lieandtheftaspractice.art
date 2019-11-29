@@ -1,5 +1,5 @@
 ---
-name: 'Phase III: November 22 – December 11, 2019'
+name: 'Phase IV: November 22 – December 11, 2019'
 ---
 **Next Generation: Lie & Theft as Practice**\
 **Magacin, Kraljevića Marka 4-6, Belgrade**
@@ -21,3 +21,5 @@ _When does reality blur? Where are the limits of fiction?_
 _Do we walk a blurred line between fact and fiction, between appropriation and theft, when we tell the story of a story, when we write a poem inspired by another poem, when we write a line of text, when we improvise a movement that is always based on the memory of a movement, when we reinvent a song that we hardly remember?_
 
 _In the workshop Lie & Theft as Practice I want to give an impulse to retrace how to think about the original, the real, the own and the alienated._
+
+Furthermore, 10 days period after the second Workshop will serve to reflect, discuss and deepen the dialogue with the artistic collaborators of the project ‘Lie & Theft as Practice’ which will be used to deepen and further facilitate the upcoming collaboration in 2020 but also to start the processes of archival and selection of the materials for the book/catalogue under the same title.
