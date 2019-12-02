@@ -1,6 +1,6 @@
 ---
 templateKey: practice
-title: An alternative self - Dea Medean
+title: Medea
 featuredimage: /img/lagala-da-sam-medeja.jpg
 date: 2019-07-20T11:35:09.133Z
 type: Alter Ego​
@@ -13,6 +13,6 @@ The next day, I got up and went to find a job. It's impossible to find a job in 
 
 I sometimes miss home. But I can not think of it, as soon as something reminds me of home I cut it at the root. It will pull me in some sort of destruction, I know. I feel sick. I am unable to forget everything. Then my body is suddenly tired, it becomes weak, and everything burns me from inside. I'm trying to get control of it, but that's just impossible. As soon as my thoughts find a free space in my head, it breaks in, the weakness gets to me. It overtakes me. As if she is lurking, waiting for me to be idle, to peck me in and get to me. Then I say, rest in peace and feel even worse. I realize that I will never rest in peace. And peace, it's heaven. If that destination is unreachable, only one other remains. I prefer not to think of it. Ugh.
 
-Dea Medean
+Medea
 
 ![](/img/lagala-da-sam-medeja.jpg)
