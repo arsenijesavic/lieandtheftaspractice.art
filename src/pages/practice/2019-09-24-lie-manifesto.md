@@ -1,6 +1,6 @@
 ---
 templateKey: practice
-title: Lie Manifesto
+title: I am happy
 featuredimage: /img/lagala-sebe-da-znam-ko-sam-i-sta-zelim.jpg
 date: 2019-09-24T10:00:37.098Z
 type: Manifestos
