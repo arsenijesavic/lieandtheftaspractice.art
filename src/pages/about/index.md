@@ -28,8 +28,9 @@ In the year 2020 _Lie & Theft as Practice_ will be divided in two parts. First p
 
 This new publication, as the previous one, will be followed by multi-disciplinary contents raging from performances, exhibitions and public talks in Serbia and abroad.
 
-\
-_Darko Dragičević_
+_Darko Dragičević_
+
+
 
 
 
