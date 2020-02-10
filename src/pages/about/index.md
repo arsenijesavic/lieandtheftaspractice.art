@@ -1,5 +1,5 @@
 ---
-heroPhoto: /img/23.11.19_w_ms_zo_img_6550.jpg
+heroPhoto: /img/zoricamilisavljevic_img_7349_cb_1800.jpg
 heroPhotoAuthor: Lie & Theft as Practice © Zorica Milisavljević
 ---
 **Lie & Theft as Practice (2020)**
