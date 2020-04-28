@@ -1,6 +1,6 @@
 ---
-heroPhoto: /img/zoricamilisavljevic_img_7349_cb_1800.jpg
-heroPhotoAuthor: Lie & Theft as Practice © Zorica Milisavljević
+heroPhoto: /img/isečak-cb.jpg
+heroPhotoAuthor: Lie & Theft as Practice © Darko Dragičević
 ---
 **Lie & Theft as Practice (2020)**
 
