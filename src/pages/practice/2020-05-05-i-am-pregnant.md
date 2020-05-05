@@ -7,9 +7,7 @@ type: The cityscape lies
 authors:
   - author: Miloš Janjić
 ---
-![](/img/202013.jpg)
-
-
+![The Cityscape Lies](/img/202013.jpg "© Miloš Janjić")
 
 Dear passengers, we are anouncing that city public transport will not work, at the Ferbruary 30th, whole day, and February 31st in period from 4 a.m. untill 11 p.m.
 
