@@ -7,4 +7,6 @@ type: Stolen kunst
 authors:
   - author: Ana Vuković
 ---
+![](/img/img_20200210_112100.jpg)
+
 I didn’t reach zen
