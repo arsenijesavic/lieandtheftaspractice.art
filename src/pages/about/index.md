@@ -1,6 +1,6 @@
 ---
-heroPhoto: /img/isečak-cb.jpg
-heroPhotoAuthor: Lie & Theft as Practice © Darko Dragičević
+heroPhoto: /img/faza-vii_photo-miloš-janjić_cb.jpg
+heroPhotoAuthor: Lie & Theft as Practice © Miloš Janjić
 ---
 **Lie & Theft as Practice (2020)**
 
