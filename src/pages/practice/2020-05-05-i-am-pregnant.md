@@ -9,10 +9,12 @@ authors:
 ---
 ![The Cityscape Lies](/img/202013.jpg "© Miloš Janjić")
 
-Dear passengers, we are anouncing that city public transport will not work, at the Ferbruary 30th, whole day, and February 31st in period from 4 a.m. untill 11 p.m.
+DEAR PASSENGERS, 
 
-Thank you for understanding.
+WE WOULD LIKE TO INFORM YOU THAT PUBLIC TRANSPORT WILL NOT RUN ON FEBRUARY 30TH ALL DAY AND ON FEBRUARY 31ST IN THE PERIOD FROM 4 a.m. TO 11 p.m.
 
-Main office for public transport of city of Belgrade,
+THANK YOU FOR UNDERSTANDING
 
-Department for public transport of city of Belgrade
+DIRECTORATE FOR PUBLIC TRANSPORT OF THE CITY OF BELGRADE,
+
+SECRETARIAT FOR PUBLIC TRANSPORT OF THE CITY OF BELGRADE
